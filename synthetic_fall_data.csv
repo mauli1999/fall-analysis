@@ -1,0 +1,68 @@
+patient_id,fall_date,fall_time,location,cause,injury,notes,fall_status
+P2147,2025-09-17,14:54,Hallway,Dizziness,None,Assisted by staff,1
+P8208,2025-09-12,10:21,Bedroom,Tripped on object,None,Post-meal incident,1
+P2441,2025-09-10,16:14,Stairs,Dizziness,Fracture,Post-meal incident,1
+P7436,2025-09-10,04:12,Hallway,Medication side effect,Bruise,Patient was alone,1
+P1479,2025-09-16,14:08,Bathroom,Tripped on object,Head injury,Post-meal incident,1
+P8994,2025-09-13,09:02,Kitchen,Medication side effect,Fracture,Assisted by staff,1
+P4231,2025-09-25,05:19,Hallway,Tripped on object,Bruise,Post-meal incident,1
+P6013,2025-09-29,14:53,Bathroom,Tripped on object,Bruise,Assisted by staff,1
+P3830,2025-10-01,23:39,Bedroom,Medication side effect,Bruise,Post-meal incident,1
+P6430,2025-10-03,23:25,Kitchen,Slippery floor,Fracture,Patient was alone,1
+P2662,2025-09-25,13:22,Hallway,Slippery floor,None,Patient was alone,1
+P6816,2025-09-30,07:58,Bedroom,Slippery floor,Fracture,Assisted by staff,1
+P5031,2025-10-01,05:27,Bedroom,Poor lighting,Bruise,Post-meal incident,1
+P4998,2025-09-10,02:23,Bedroom,Poor lighting,Fracture,Assisted by staff,1
+P1476,2025-09-23,17:19,Bedroom,Poor lighting,Fracture,Patient was alone,1
+P1645,2025-09-24,13:34,Stairs,Slippery floor,Fracture,Patient was alone,1
+P1285,2025-09-15,19:45,Stairs,Poor lighting,Fracture,Assisted by staff,1
+P3661,2025-10-06,18:58,Hallway,Medication side effect,Head injury,Post-meal incident,1
+P2006,2025-09-27,11:21,Bathroom,Medication side effect,None,Assisted by staff,1
+P7586,2025-09-24,07:24,Stairs,Medication side effect,Fracture,Patient was alone,1
+P8267,2025-09-27,21:56,Bedroom,Poor lighting,Head injury,Assisted by staff,1
+P8733,2025-09-10,09:28,Hallway,Dizziness,Bruise,Post-meal incident,1
+P6883,2025-09-26,14:09,Bedroom,Medication side effect,Bruise,Post-meal incident,1
+P1395,2025-09-08,22:05,Bedroom,Slippery floor,None,Patient was alone,1
+P8905,2025-09-09,23:32,Hallway,Poor lighting,Head injury,Patient was alone,1
+P9315,2025-10-05,11:31,Bathroom,Poor lighting,Bruise,Post-meal incident,1
+P7256,2025-09-08,22:07,Kitchen,Slippery floor,Head injury,Assisted by staff,1
+P7260,2025-09-11,14:26,Hallway,Tripped on object,Fracture,Assisted by staff,1
+P8843,2025-09-21,03:14,Kitchen,Dizziness,Bruise,Assisted by staff,1
+P6029,2025-09-22,21:15,Kitchen,Poor lighting,Bruise,Patient was alone,1
+P8887,2025-09-30,18:13,Stairs,Medication side effect,None,Post-meal incident,1
+P5800,2025-09-11,06:39,Bathroom,Slippery floor,None,Assisted by staff,1
+P9957,2025-09-16,10:24,Bedroom,Medication side effect,Head injury,Assisted by staff,1
+P2909,2025-10-03,22:45,Bathroom,Poor lighting,Head injury,Assisted by staff,1
+P1129,2025-10-01,03:45,Kitchen,Dizziness,None,Post-meal incident,1
+P5749,2025-09-18,13:07,Bathroom,Poor lighting,Fracture,Post-meal incident,1
+P7782,2025-09-29,10:19,Kitchen,Tripped on object,Fracture,Post-meal incident,1
+P7793,2025-10-02,11:33,Kitchen,Poor lighting,Bruise,Patient was alone,1
+P9489,2025-09-26,13:21,Kitchen,Tripped on object,None,Post-meal incident,1
+P7983,2025-09-24,11:53,Stairs,Tripped on object,Bruise,Patient was alone,1
+P8971,2025-09-25,18:16,Bathroom,Dizziness,Head injury,Assisted by staff,1
+P7603,2025-10-05,02:25,Kitchen,Dizziness,None,Post-meal incident,1
+P3371,2025-10-07,01:06,Bathroom,Dizziness,Bruise,Assisted by staff,1
+P3589,2025-09-17,08:51,Kitchen,Slippery floor,Head injury,Patient was alone,1
+P1745,2025-09-19,21:12,Bedroom,Tripped on object,Bruise,Post-meal incident,1
+P4910,2025-10-02,16:39,Stairs,Tripped on object,Bruise,Post-meal incident,1
+P3961,2025-09-21,22:35,Stairs,Poor lighting,Bruise,Post-meal incident,1
+P2116,2025-09-21,22:07,Stairs,Medication side effect,Head injury,Patient was alone,1
+P7228,2025-09-16,09:34,Bedroom,Medication side effect,Head injury,Post-meal incident,1
+P4894,2025-09-18,09:59,Bathroom,Poor lighting,Bruise,Patient was alone,1
+P2441,2025-09-10,16:14,Stairs,Dizziness,None,No incident reported,0
+P4231,2025-09-25,05:19,Hallway,Tripped on object,None,No incident reported,0
+P6430,2025-10-03,23:25,Kitchen,Slippery floor,None,No incident reported,0
+P5031,2025-10-01,05:27,Bedroom,Poor lighting,None,No incident reported,0
+P4998,2025-09-10,02:23,Bedroom,Poor lighting,None,No incident reported,0
+P1285,2025-09-15,19:45,Stairs,Poor lighting,None,No incident reported,0
+P3661,2025-10-06,18:58,Hallway,Medication side effect,None,No incident reported,0
+P2006,2025-09-27,11:21,Bathroom,Medication side effect,None,No incident reported,0
+P9315,2025-10-05,11:31,Bathroom,Poor lighting,None,No incident reported,0
+P7260,2025-09-11,14:26,Hallway,Tripped on object,None,No incident reported,0
+P8843,2025-09-21,03:14,Kitchen,Dizziness,None,No incident reported,0
+P8887,2025-09-30,18:13,Stairs,Medication side effect,None,No incident reported,0
+P8971,2025-09-25,18:16,Bathroom,Dizziness,None,No incident reported,0
+P7603,2025-10-05,02:25,Kitchen,Dizziness,None,No incident reported,0
+P3589,2025-09-17,08:51,Kitchen,Slippery floor,None,No incident reported,0
+P3961,2025-09-21,22:35,Stairs,Poor lighting,None,No incident reported,0
+P4894,2025-09-18,09:59,Bathroom,Poor lighting,None,No incident reported,0

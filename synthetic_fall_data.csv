@@ -1,68 +1,1001 @@
-patient_id,fall_date,fall_time,location,cause,injury,notes,fall_status
-P2147,2025-09-17,14:54,Hallway,Dizziness,None,Assisted by staff,1
-P8208,2025-09-12,10:21,Bedroom,Tripped on object,None,Post-meal incident,1
-P2441,2025-09-10,16:14,Stairs,Dizziness,Fracture,Post-meal incident,1
-P7436,2025-09-10,04:12,Hallway,Medication side effect,Bruise,Patient was alone,1
-P1479,2025-09-16,14:08,Bathroom,Tripped on object,Head injury,Post-meal incident,1
-P8994,2025-09-13,09:02,Kitchen,Medication side effect,Fracture,Assisted by staff,1
-P4231,2025-09-25,05:19,Hallway,Tripped on object,Bruise,Post-meal incident,1
-P6013,2025-09-29,14:53,Bathroom,Tripped on object,Bruise,Assisted by staff,1
-P3830,2025-10-01,23:39,Bedroom,Medication side effect,Bruise,Post-meal incident,1
-P6430,2025-10-03,23:25,Kitchen,Slippery floor,Fracture,Patient was alone,1
-P2662,2025-09-25,13:22,Hallway,Slippery floor,None,Patient was alone,1
-P6816,2025-09-30,07:58,Bedroom,Slippery floor,Fracture,Assisted by staff,1
-P5031,2025-10-01,05:27,Bedroom,Poor lighting,Bruise,Post-meal incident,1
-P4998,2025-09-10,02:23,Bedroom,Poor lighting,Fracture,Assisted by staff,1
-P1476,2025-09-23,17:19,Bedroom,Poor lighting,Fracture,Patient was alone,1
-P1645,2025-09-24,13:34,Stairs,Slippery floor,Fracture,Patient was alone,1
-P1285,2025-09-15,19:45,Stairs,Poor lighting,Fracture,Assisted by staff,1
-P3661,2025-10-06,18:58,Hallway,Medication side effect,Head injury,Post-meal incident,1
-P2006,2025-09-27,11:21,Bathroom,Medication side effect,None,Assisted by staff,1
-P7586,2025-09-24,07:24,Stairs,Medication side effect,Fracture,Patient was alone,1
-P8267,2025-09-27,21:56,Bedroom,Poor lighting,Head injury,Assisted by staff,1
-P8733,2025-09-10,09:28,Hallway,Dizziness,Bruise,Post-meal incident,1
-P6883,2025-09-26,14:09,Bedroom,Medication side effect,Bruise,Post-meal incident,1
-P1395,2025-09-08,22:05,Bedroom,Slippery floor,None,Patient was alone,1
-P8905,2025-09-09,23:32,Hallway,Poor lighting,Head injury,Patient was alone,1
-P9315,2025-10-05,11:31,Bathroom,Poor lighting,Bruise,Post-meal incident,1
-P7256,2025-09-08,22:07,Kitchen,Slippery floor,Head injury,Assisted by staff,1
-P7260,2025-09-11,14:26,Hallway,Tripped on object,Fracture,Assisted by staff,1
-P8843,2025-09-21,03:14,Kitchen,Dizziness,Bruise,Assisted by staff,1
-P6029,2025-09-22,21:15,Kitchen,Poor lighting,Bruise,Patient was alone,1
-P8887,2025-09-30,18:13,Stairs,Medication side effect,None,Post-meal incident,1
-P5800,2025-09-11,06:39,Bathroom,Slippery floor,None,Assisted by staff,1
-P9957,2025-09-16,10:24,Bedroom,Medication side effect,Head injury,Assisted by staff,1
-P2909,2025-10-03,22:45,Bathroom,Poor lighting,Head injury,Assisted by staff,1
-P1129,2025-10-01,03:45,Kitchen,Dizziness,None,Post-meal incident,1
-P5749,2025-09-18,13:07,Bathroom,Poor lighting,Fracture,Post-meal incident,1
-P7782,2025-09-29,10:19,Kitchen,Tripped on object,Fracture,Post-meal incident,1
-P7793,2025-10-02,11:33,Kitchen,Poor lighting,Bruise,Patient was alone,1
-P9489,2025-09-26,13:21,Kitchen,Tripped on object,None,Post-meal incident,1
-P7983,2025-09-24,11:53,Stairs,Tripped on object,Bruise,Patient was alone,1
-P8971,2025-09-25,18:16,Bathroom,Dizziness,Head injury,Assisted by staff,1
-P7603,2025-10-05,02:25,Kitchen,Dizziness,None,Post-meal incident,1
-P3371,2025-10-07,01:06,Bathroom,Dizziness,Bruise,Assisted by staff,1
-P3589,2025-09-17,08:51,Kitchen,Slippery floor,Head injury,Patient was alone,1
-P1745,2025-09-19,21:12,Bedroom,Tripped on object,Bruise,Post-meal incident,1
-P4910,2025-10-02,16:39,Stairs,Tripped on object,Bruise,Post-meal incident,1
-P3961,2025-09-21,22:35,Stairs,Poor lighting,Bruise,Post-meal incident,1
-P2116,2025-09-21,22:07,Stairs,Medication side effect,Head injury,Patient was alone,1
-P7228,2025-09-16,09:34,Bedroom,Medication side effect,Head injury,Post-meal incident,1
-P4894,2025-09-18,09:59,Bathroom,Poor lighting,Bruise,Patient was alone,1
-P2441,2025-09-10,16:14,Stairs,Dizziness,None,No incident reported,0
-P4231,2025-09-25,05:19,Hallway,Tripped on object,None,No incident reported,0
-P6430,2025-10-03,23:25,Kitchen,Slippery floor,None,No incident reported,0
-P5031,2025-10-01,05:27,Bedroom,Poor lighting,None,No incident reported,0
-P4998,2025-09-10,02:23,Bedroom,Poor lighting,None,No incident reported,0
-P1285,2025-09-15,19:45,Stairs,Poor lighting,None,No incident reported,0
-P3661,2025-10-06,18:58,Hallway,Medication side effect,None,No incident reported,0
-P2006,2025-09-27,11:21,Bathroom,Medication side effect,None,No incident reported,0
-P9315,2025-10-05,11:31,Bathroom,Poor lighting,None,No incident reported,0
-P7260,2025-09-11,14:26,Hallway,Tripped on object,None,No incident reported,0
-P8843,2025-09-21,03:14,Kitchen,Dizziness,None,No incident reported,0
-P8887,2025-09-30,18:13,Stairs,Medication side effect,None,No incident reported,0
-P8971,2025-09-25,18:16,Bathroom,Dizziness,None,No incident reported,0
-P7603,2025-10-05,02:25,Kitchen,Dizziness,None,No incident reported,0
-P3589,2025-09-17,08:51,Kitchen,Slippery floor,None,No incident reported,0
-P3961,2025-09-21,22:35,Stairs,Poor lighting,None,No incident reported,0
-P4894,2025-09-18,09:59,Bathroom,Poor lighting,None,No incident reported,0
+age,gender,location,cause,time_of_day,fall_occurred,fall_date,fall_time
+69.0,Female,Home,Slip,Evening,1,2025-08-01,21:12
+32.0,Female,Nursing Home,Slip,Night,0,2025-03-25,00:52
+89.0,Male,Home,Other,Morning,0,2025-10-08,11:49
+78.0,Male,Home,Trip,Morning,1,2025-08-19,07:55
+38.0,Male,Nursing Home,Dizziness,Evening,0,2025-03-25,21:31
+,,Home,Dizziness,Afternoon,1,2025-03-05,14:14
+95.64409318829819,Female,Home,Other,Evening,1,2025-05-13,21:20
+,,Home,Dizziness,Night,1,2025-05-30,05:00
+41.0,Female,Nursing Home,Slip,Night,1,2025-04-24,03:10
+20.0,Female,Nursing Home,Trip,Night,0,2025-03-04,03:25
+39.0,Male,Home,Dizziness,Night,0,2025-12-08,04:36
+70.0,Female,Home,Trip,Night,0,2025-12-28,04:20
+19.0,Female,Nursing Home,Slip,Afternoon,0,2025-12-17,16:44
+47.0,Male,Nursing Home,Dizziness,Morning,0,2025-06-06,06:26
+55.0,Male,Home,Other,Evening,0,2025-03-17,22:22
+19.0,Male,Home,Trip,Evening,1,2025-05-25,20:15
+81.0,Male,Home,Slip,Night,0,2025-12-08,05:03
+77.0,Female,Hospital,Trip,Evening,0,2025-08-12,22:41
+38.0,Female,Nursing Home,Dizziness,Night,0,2025-11-08,00:43
+50.0,Male,Hospital,Dizziness,Afternoon,0,2025-04-12,15:25
+93.0,Male,Nursing Home,Other,Afternoon,0,2025-12-12,16:47
+75.0,Male,Nursing Home,Slip,Morning,0,2025-10-27,06:27
+39.0,Male,Nursing Home,Slip,Afternoon,0,2025-03-28,12:11
+66.0,Female,Nursing Home,Other,Afternoon,0,2025-10-29,16:53
+76.0,Male,Nursing Home,Other,Morning,1,2025-06-16,09:53
+59.0,Male,Nursing Home,Slip,Evening,1,2025-06-18,21:55
+77.0,Male,Nursing Home,Trip,Night,0,2025-05-14,02:04
+99.96277653964384,Female,Hospital,Trip,Night,0,2025-02-18,01:45
+32.0,Male,Home,Other,Evening,1,2025-12-05,19:12
+79.0,Female,Home,Trip,Morning,1,2025-12-12,07:44
+,,Hospital,Slip,Evening,0,2025-05-13,19:13
+64.0,Female,Hospital,Dizziness,Afternoon,1,2025-12-12,14:41
+79.0,Female,Hospital,Dizziness,Morning,0,2025-05-16,11:03
+68.0,Male,Hospital,Trip,Morning,1,2025-09-01,10:32
+69.4458759056794,Female,Nursing Home,Other,Morning,1,2025-04-18,06:07
+81.0,Female,Home,Other,Night,0,2025-11-08,04:50
+20.0,Female,Nursing Home,Other,Evening,1,2025-10-13,19:42
+,,Home,Other,Morning,0,2025-01-20,06:14
+24.0,Female,Home,Other,Morning,1,2025-03-30,11:14
+38.0,Female,Hospital,Trip,Morning,0,2025-10-22,10:28
+90.0,Female,Nursing Home,Dizziness,Evening,1,2025-04-21,20:53
+61.212707960462545,Male,Hospital,Dizziness,Night,0,2025-10-27,02:09
+35.0,Female,Nursing Home,Trip,Afternoon,0,2025-03-17,15:53
+21.0,Male,Home,Other,Night,0,2025-06-25,03:30
+77.0,Female,Hospital,Trip,Morning,1,2025-12-08,07:15
+31.0,Male,Hospital,Dizziness,Night,0,2025-05-27,03:24
+28.315810489394106,Male,Home,Slip,Night,0,2025-04-10,03:33
+70.0,Male,Home,Trip,Afternoon,1,2025-09-02,15:36
+19.0,Female,Home,Other,Evening,0,2025-04-26,20:08
+77.0,Male,Hospital,Dizziness,Evening,0,2025-04-01,22:52
+81.0928367373485,Male,Nursing Home,Dizziness,Night,0,2025-01-27,01:42
+61.0,Male,Hospital,Dizziness,Night,0,2025-01-24,02:56
+25.0,Female,Nursing Home,Dizziness,Evening,0,2025-02-26,19:40
+64.0,Female,Hospital,Other,Evening,0,2025-10-23,23:03
+52.0,Female,Hospital,Slip,Afternoon,0,2025-05-13,16:40
+96.10448828040694,Female,Home,Dizziness,Morning,0,2025-11-26,10:49
+98.0,Female,Nursing Home,Trip,Night,0,2025-09-05,03:41
+53.0,Female,Hospital,Slip,Evening,0,2025-02-06,21:51
+67.0,Male,Hospital,Dizziness,Night,1,2025-03-15,04:33
+21.0,Male,Home,Slip,Night,0,2025-05-21,01:00
+19.0,Male,Home,Trip,Evening,1,2025-11-17,19:16
+23.0,Male,Nursing Home,Dizziness,Afternoon,0,2025-06-16,14:26
+71.0,Female,Hospital,Trip,Night,0,2025-09-15,02:45
+21.0,Female,Nursing Home,Other,Afternoon,0,2025-12-20,13:53
+71.0,Male,Hospital,Dizziness,Evening,0,2025-08-12,19:48
+,,Nursing Home,Dizziness,Morning,0,2025-05-31,11:37
+35.0,Female,Home,Dizziness,Morning,0,2025-01-18,11:03
+61.0,Male,Hospital,Dizziness,Night,0,2025-05-25,00:58
+51.0,Female,Nursing Home,Other,Evening,0,2025-08-28,18:03
+91.0,Female,Home,Dizziness,Afternoon,0,2025-12-09,13:48
+79.0,Male,Home,Slip,Night,0,2025-08-24,05:30
+31.0,Female,Nursing Home,Dizziness,Evening,0,2025-02-03,20:42
+65.0,Female,Hospital,Other,Evening,0,2025-07-08,19:54
+26.24487645271133,Female,Hospital,Dizziness,Afternoon,0,2024-12-31,12:59
+89.0,Female,Home,Slip,Night,0,2025-06-01,01:15
+95.0,Female,Hospital,Other,Evening,0,2025-05-05,18:46
+79.0,Female,Hospital,Other,Evening,1,2025-12-10,22:14
+57.0,Male,Hospital,Slip,Evening,0,2025-08-13,20:03
+97.0,Male,Home,Slip,Afternoon,0,2025-08-08,17:43
+99.0,Male,Nursing Home,Slip,Night,0,2025-07-29,05:35
+70.0,Female,Hospital,Slip,Night,0,2025-01-24,02:21
+41.0,Male,Home,Slip,Night,0,2025-01-15,00:21
+43.0,Female,Home,Other,Night,0,2025-06-30,01:56
+77.0,Female,Nursing Home,Other,Morning,0,2025-11-24,07:54
+58.0,Female,Hospital,Dizziness,Morning,0,2025-05-08,09:48
+46.0,Female,Hospital,Dizziness,Night,0,2025-02-10,03:54
+32.0,Female,Nursing Home,Trip,Afternoon,0,2025-12-01,16:55
+62.0,Female,Nursing Home,Dizziness,Morning,0,2025-08-23,09:30
+82.0,Female,Home,Dizziness,Evening,0,2025-12-25,21:30
+83.17716033785412,Female,Home,Slip,Morning,0,2025-02-02,07:22
+26.0,Male,Nursing Home,Slip,Evening,0,2025-12-10,23:52
+18.0,Male,Hospital,Dizziness,Night,0,2025-02-13,03:14
+25.0,Female,Home,Trip,Morning,0,2025-05-13,09:15
+80.0,Female,Home,Slip,Afternoon,1,2025-01-20,16:20
+28.0,Male,Hospital,Dizziness,Morning,0,2025-05-01,06:49
+98.0,Female,Home,Dizziness,Morning,0,2025-03-10,10:12
+,,Hospital,Other,Morning,0,2025-12-17,08:29
+52.0,Female,Hospital,Trip,Night,0,2025-12-26,04:17
+,,Hospital,Other,Afternoon,0,2025-02-16,17:35
+50.0,Female,Nursing Home,Trip,Morning,0,2025-02-07,09:19
+22.0,Female,Nursing Home,Slip,Afternoon,0,2025-10-13,15:18
+58.0,Female,Nursing Home,Trip,Night,1,2025-01-09,04:43
+45.0,Female,Hospital,Dizziness,Evening,0,2025-01-29,18:43
+24.0,Female,Hospital,Dizziness,Morning,0,2025-08-31,10:03
+90.0,Female,Nursing Home,Trip,Afternoon,1,2025-09-30,14:33
+89.0,Male,Home,Trip,Afternoon,1,2025-03-28,13:04
+29.0,Female,Hospital,Trip,Night,1,2025-08-31,01:31
+51.0,Male,Home,Other,Morning,0,2025-11-24,07:40
+50.0,Male,Home,Trip,Evening,0,2025-01-14,22:38
+65.0,Female,Hospital,Slip,Afternoon,0,2025-01-03,16:57
+40.0,Female,Hospital,Other,Morning,0,2025-07-09,07:09
+79.0,Female,Home,Other,Evening,0,2025-06-16,23:26
+54.0,Male,Home,Trip,Afternoon,0,2025-01-08,15:50
+,,Nursing Home,Slip,Afternoon,1,2025-04-18,16:07
+52.0,Female,Nursing Home,Other,Evening,0,2025-05-16,18:27
+82.0,Female,Hospital,Dizziness,Evening,1,2025-06-02,18:38
+64.0,Female,Nursing Home,Other,Night,0,2025-07-27,05:20
+95.0,Female,Nursing Home,Trip,Morning,0,2025-09-28,11:20
+20.0,Male,Nursing Home,Slip,Morning,0,2025-05-22,06:08
+18.0,Female,Nursing Home,Trip,Night,0,2025-04-08,00:04
+22.0,Male,Home,Dizziness,Afternoon,0,2025-11-03,13:56
+31.0,Male,Hospital,Dizziness,Evening,0,2025-03-09,23:30
+44.0,Female,Nursing Home,Dizziness,Evening,1,2025-09-03,21:39
+26.0,Male,Home,Trip,Evening,0,2025-09-17,23:42
+96.0,Female,Home,Other,Afternoon,0,2025-10-02,14:35
+32.0,Male,Home,Trip,Evening,0,2025-03-19,19:32
+59.22436617829851,Female,Nursing Home,Slip,Evening,0,2025-05-25,22:13
+94.0,Male,Nursing Home,Other,Night,1,2025-04-20,00:28
+68.0,Female,Hospital,Dizziness,Afternoon,0,2025-09-14,14:48
+80.0,Female,Nursing Home,Trip,Morning,0,2025-04-02,09:57
+69.0,Male,Nursing Home,Dizziness,Night,0,2025-01-12,03:09
+21.0,Female,Home,Dizziness,Night,0,2025-09-16,05:56
+41.87242788795643,Female,Hospital,Slip,Morning,0,2025-04-18,06:06
+32.0,Female,Nursing Home,Other,Night,0,2025-11-25,01:26
+60.0,Male,Nursing Home,Slip,Afternoon,0,2025-07-07,16:27
+46.0,Female,Home,Slip,Evening,0,2025-04-04,23:22
+53.0,Female,Home,Slip,Afternoon,0,2025-04-14,15:19
+30.0,Female,Nursing Home,Dizziness,Morning,0,2025-01-07,11:53
+,,Hospital,Slip,Morning,1,2025-03-07,06:27
+88.0,Female,Hospital,Slip,Night,0,2025-07-09,04:55
+76.0,Male,Home,Other,Afternoon,1,2025-09-12,16:17
+45.0,Female,Home,Other,Afternoon,1,2025-01-08,17:56
+83.0,Female,Nursing Home,Slip,Morning,0,2025-04-26,10:18
+59.0,Male,Home,Other,Afternoon,0,2025-09-23,12:00
+62.0,Female,Nursing Home,Other,Morning,0,2025-04-08,10:02
+79.0,Female,Hospital,Slip,Afternoon,1,2025-10-24,13:20
+74.0,Female,Hospital,Dizziness,Afternoon,0,2025-06-12,14:40
+23.0,Female,Nursing Home,Slip,Afternoon,0,2025-05-20,14:24
+45.0,Female,Home,Other,Morning,0,2025-09-24,10:37
+45.0,Female,Hospital,Dizziness,Night,1,2025-02-05,04:54
+58.955290553793645,Female,Home,Trip,Afternoon,1,2025-03-14,15:51
+45.17408691853133,Male,Hospital,Dizziness,Morning,0,2025-03-13,09:44
+,,Nursing Home,Other,Morning,0,2025-11-03,07:20
+92.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-07-17,17:50
+79.0,Female,Nursing Home,Slip,Afternoon,0,2025-05-09,16:12
+18.0,Male,Hospital,Trip,Night,0,2025-09-02,00:22
+44.0,Male,Home,Trip,Morning,0,2025-11-07,06:16
+79.0,Male,Home,Trip,Morning,0,2025-02-28,10:01
+,,Home,Other,Evening,0,2025-10-05,20:18
+20.0,Female,Hospital,Other,Morning,0,2025-04-12,11:41
+87.0,Male,Hospital,Trip,Night,1,2025-10-22,01:58
+89.0,Female,Hospital,Dizziness,Evening,0,2025-11-15,21:08
+44.0,Female,Hospital,Trip,Evening,0,2025-12-06,18:26
+26.0,Female,Hospital,Dizziness,Evening,0,2025-05-30,19:35
+79.0,Female,Home,Dizziness,Afternoon,0,2025-06-05,14:16
+54.0,Female,Hospital,Other,Afternoon,0,2025-07-24,16:38
+68.0,Female,Hospital,Dizziness,Morning,0,2025-06-27,07:52
+58.483781723491596,Female,Home,Trip,Evening,0,2025-07-15,23:58
+41.0,Male,Hospital,Other,Night,1,2025-08-10,00:38
+96.0,Female,Home,Slip,Afternoon,0,2025-03-29,15:39
+76.0,Male,Home,Slip,Night,0,2025-10-13,04:03
+49.0,Male,Nursing Home,Other,Night,0,2025-10-02,05:24
+69.0,Female,Nursing Home,Trip,Afternoon,0,2025-08-23,16:29
+79.0,Male,Nursing Home,Slip,Afternoon,1,2025-07-01,15:03
+80.23756818543814,Female,Nursing Home,Slip,Afternoon,0,2025-07-27,16:08
+69.0,Female,Hospital,Dizziness,Afternoon,0,2025-05-09,15:50
+29.0,Female,Nursing Home,Dizziness,Evening,0,2025-06-01,23:04
+56.0,Female,Home,Trip,Evening,0,2025-01-12,19:41
+19.0,Female,Hospital,Other,Evening,0,2025-05-01,18:18
+20.0,Female,Nursing Home,Trip,Evening,0,2025-12-24,21:17
+73.0,Male,Home,Other,Morning,0,2025-08-07,06:29
+,,Hospital,Slip,Evening,1,2025-04-15,20:34
+76.0,Male,Hospital,Dizziness,Afternoon,1,2025-03-10,12:00
+19.0,Female,Nursing Home,Trip,Night,0,2025-07-13,03:08
+19.0,Male,Hospital,Trip,Evening,0,2025-07-04,21:23
+56.735282482001736,Female,Home,Other,Morning,0,2025-04-08,09:34
+18.0,Male,Hospital,Other,Afternoon,0,2025-03-22,17:26
+36.0,Female,Home,Trip,Night,0,2025-03-15,02:44
+,,Hospital,Other,Night,0,2025-12-05,03:19
+70.0,Female,Nursing Home,Trip,Evening,0,2025-07-10,18:20
+61.0,Male,Home,Trip,Night,0,2025-11-20,00:44
+49.0,Female,Hospital,Trip,Evening,1,2025-08-01,18:09
+87.0,Female,Hospital,Slip,Evening,0,2025-11-10,20:58
+49.0,Male,Hospital,Other,Afternoon,0,2025-11-13,17:38
+85.0,Male,Home,Dizziness,Afternoon,0,2025-05-23,15:21
+72.0,Female,Home,Dizziness,Morning,0,2025-08-03,07:47
+90.45661295162608,Female,Home,Other,Afternoon,0,2025-12-26,17:31
+73.0,Female,Nursing Home,Trip,Afternoon,0,2025-11-19,14:27
+34.0,Female,Nursing Home,Dizziness,Evening,0,2025-01-14,19:58
+55.0,Male,Home,Dizziness,Afternoon,0,2025-08-04,12:28
+48.72492397691183,Male,Hospital,Other,Evening,0,2025-02-03,19:43
+86.0,Male,Nursing Home,Dizziness,Evening,0,2025-07-01,23:30
+87.0,Female,Home,Trip,Afternoon,0,2025-09-26,17:33
+28.0,Male,Hospital,Other,Morning,0,2025-12-23,09:17
+33.0,Male,Nursing Home,Trip,Morning,0,2025-04-09,09:37
+90.0,Male,Hospital,Dizziness,Night,0,2025-01-06,02:08
+76.0,Female,Hospital,Dizziness,Night,0,2025-01-29,02:08
+87.0,Female,Hospital,Trip,Afternoon,0,2025-10-31,17:07
+,,Hospital,Slip,Morning,0,2025-05-23,08:34
+20.0,Female,Nursing Home,Dizziness,Evening,0,2025-04-20,19:04
+37.0,Female,Nursing Home,Slip,Night,0,2025-08-19,05:27
+76.0,Male,Nursing Home,Dizziness,Evening,0,2025-06-27,23:03
+53.0,Female,Home,Slip,Night,0,2025-03-12,03:24
+36.0,Female,Nursing Home,Slip,Afternoon,0,2025-07-28,15:11
+84.0,Female,Hospital,Slip,Morning,1,2025-08-07,07:42
+36.0,Female,Nursing Home,Trip,Night,0,2025-03-20,05:21
+37.0,Female,Hospital,Slip,Morning,0,2025-03-23,09:37
+88.0,Female,Home,Slip,Evening,0,2025-02-10,21:14
+69.0,Female,Hospital,Slip,Afternoon,1,2025-09-29,12:00
+50.0,Female,Hospital,Dizziness,Morning,0,2025-07-09,06:30
+57.0,Female,Hospital,Slip,Afternoon,0,2025-06-21,15:41
+56.0,Female,Home,Dizziness,Morning,0,2025-01-06,10:43
+101.58615025138694,Male,Nursing Home,Slip,Evening,1,2025-06-03,19:41
+18.0,Female,Nursing Home,Slip,Evening,0,2025-01-09,23:59
+34.334236202835626,Male,Home,Trip,Afternoon,0,2025-02-02,15:38
+74.0,Female,Hospital,Dizziness,Evening,0,2025-02-04,19:01
+,,Nursing Home,Slip,Night,0,2025-01-05,01:14
+40.0,Female,Home,Dizziness,Morning,0,2025-08-02,11:43
+48.0,Female,Nursing Home,Dizziness,Evening,1,2025-05-13,19:16
+48.828755702445385,Male,Home,Other,Night,0,2025-10-11,03:06
+24.0,Male,Hospital,Trip,Afternoon,1,2025-05-05,17:40
+33.0,Female,Nursing Home,Trip,Night,0,2025-12-02,02:59
+77.0,Male,Home,Trip,Afternoon,0,2025-06-22,14:54
+19.0,Male,Nursing Home,Other,Afternoon,0,2025-05-31,13:05
+18.0,Female,Nursing Home,Other,Morning,0,2025-11-26,07:37
+65.0,Female,Nursing Home,Trip,Morning,1,2025-01-25,10:57
+29.0,Female,Nursing Home,Other,Night,1,2025-04-24,02:33
+79.78875384265439,Male,Home,Other,Morning,1,2025-10-10,09:14
+54.0,Female,Hospital,Other,Morning,0,2025-03-15,11:05
+49.0,Female,Home,Trip,Morning,0,2025-06-14,07:36
+26.0,Female,Home,Trip,Night,0,2025-07-07,01:31
+36.0,Female,Home,Trip,Evening,1,2025-03-18,20:02
+,,Hospital,Other,Morning,0,2025-03-30,11:21
+97.0,Female,Nursing Home,Trip,Morning,1,2025-06-24,07:50
+22.57024070343234,Female,Nursing Home,Other,Night,0,2025-01-20,02:11
+37.0,Female,Nursing Home,Slip,Evening,0,2025-02-22,22:47
+41.0,Female,Hospital,Other,Morning,1,2025-07-02,06:06
+71.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-12-24,16:55
+50.0,Female,Hospital,Trip,Night,0,2025-08-09,01:03
+41.0,Female,Nursing Home,Trip,Morning,0,2025-11-10,07:38
+92.0,Female,Nursing Home,Dizziness,Morning,0,2025-11-23,06:51
+89.0,Female,Home,Other,Afternoon,0,2025-06-27,17:18
+60.75315296628834,Female,Hospital,Slip,Afternoon,0,2025-10-02,16:31
+55.0,Female,Home,Dizziness,Night,1,2025-04-21,01:08
+42.0,Female,Home,Dizziness,Night,1,2025-08-11,02:12
+35.0,Female,Home,Other,Afternoon,0,2025-08-01,14:20
+99.0,Female,Hospital,Trip,Night,0,2025-02-27,05:03
+83.0,Female,Hospital,Other,Afternoon,1,2025-11-22,14:34
+71.0,Female,Nursing Home,Dizziness,Morning,0,2025-04-18,08:03
+52.0,Female,Home,Dizziness,Afternoon,0,2025-06-05,12:36
+97.0,Male,Nursing Home,Trip,Afternoon,0,2025-07-09,17:34
+78.0,Male,Home,Trip,Evening,0,2025-07-18,21:24
+58.0,Male,Hospital,Trip,Afternoon,0,2025-11-07,16:03
+50.0,Female,Hospital,Other,Afternoon,1,2025-07-14,17:13
+85.0,Male,Hospital,Trip,Evening,0,2025-02-03,22:26
+50.0,Male,Home,Dizziness,Night,0,2025-09-02,05:16
+31.0,Male,Hospital,Dizziness,Evening,0,2025-08-24,21:39
+38.0,Male,Home,Slip,Morning,0,2025-04-13,06:34
+,,Nursing Home,Other,Evening,0,2025-01-06,18:40
+37.0,Female,Home,Slip,Morning,0,2025-10-09,07:56
+25.0,Female,Nursing Home,Dizziness,Night,0,2024-12-31,04:51
+24.0,Male,Home,Slip,Evening,0,2025-08-06,19:51
+84.0,Male,Nursing Home,Dizziness,Evening,1,2025-08-17,21:42
+34.0,Male,Hospital,Slip,Night,0,2025-06-20,02:25
+50.0,Male,Nursing Home,Trip,Morning,0,2025-03-27,11:46
+65.0,Female,Hospital,Slip,Evening,0,2025-02-09,20:54
+93.0,Female,Hospital,Trip,Morning,0,2025-05-02,08:34
+76.0,Male,Nursing Home,Trip,Evening,0,2025-11-26,21:57
+39.0,Female,Home,Other,Afternoon,0,2025-10-24,15:23
+47.0,Male,Home,Trip,Evening,0,2025-06-26,22:19
+55.0,Female,Home,Trip,Night,0,2025-03-03,04:40
+68.0,Female,Home,Slip,Night,1,2025-06-13,00:52
+71.0,Female,Home,Dizziness,Morning,1,2025-07-05,10:11
+25.0,Male,Hospital,Other,Evening,1,2025-07-27,22:55
+44.0,Female,Home,Trip,Morning,0,2025-08-14,07:32
+44.0,Male,Hospital,Other,Morning,0,2025-02-16,06:39
+38.0,Male,Hospital,Slip,Afternoon,0,2025-08-11,17:15
+47.0,Male,Hospital,Trip,Afternoon,0,2025-01-02,16:34
+45.0,Male,Nursing Home,Slip,Night,0,2025-06-23,02:55
+81.0,Female,Nursing Home,Other,Morning,0,2025-04-08,10:25
+80.29381891577636,Female,Hospital,Slip,Night,0,2025-04-25,02:06
+78.0,Male,Nursing Home,Other,Evening,1,2025-09-26,22:55
+65.0,Female,Home,Slip,Morning,0,2025-09-09,07:41
+34.06119108646739,Female,Home,Other,Morning,0,2025-11-12,09:33
+23.007320709334973,Female,Hospital,Dizziness,Evening,0,2025-04-04,20:07
+52.0,Female,Home,Slip,Evening,0,2025-09-29,20:44
+81.0,Female,Hospital,Slip,Night,0,2025-01-23,04:01
+66.0,Female,Hospital,Dizziness,Night,0,2025-04-25,05:40
+34.0,Female,Home,Dizziness,Evening,0,2025-05-30,21:56
+61.0,Male,Nursing Home,Slip,Night,0,2025-12-03,01:49
+47.0,Female,Home,Dizziness,Evening,0,2025-02-18,18:11
+63.0,Female,Home,Trip,Morning,0,2025-07-24,06:44
+23.0,Male,Hospital,Other,Morning,0,2025-11-30,08:05
+54.0,Female,Hospital,Other,Afternoon,1,2025-03-19,16:22
+41.0,Male,Hospital,Other,Morning,0,2025-03-10,08:45
+55.73750801456151,Male,Hospital,Trip,Evening,0,2025-01-26,23:37
+70.0,Male,Nursing Home,Dizziness,Night,0,2025-09-27,01:21
+79.60845629790492,Male,Nursing Home,Dizziness,Afternoon,1,2025-02-18,15:24
+80.0,Female,Nursing Home,Slip,Night,1,2025-10-18,03:48
+49.0,Female,Hospital,Dizziness,Evening,0,2025-09-03,22:07
+50.0,Female,Hospital,Slip,Morning,0,2025-09-20,10:48
+84.0,Female,Hospital,Trip,Afternoon,1,2025-03-19,15:32
+35.0,Male,Nursing Home,Other,Evening,0,2025-07-08,23:49
+42.0,Female,Hospital,Other,Afternoon,0,2025-02-15,16:38
+71.0,Female,Home,Other,Afternoon,0,2025-12-26,13:37
+61.62157675481882,Female,Home,Dizziness,Morning,1,2025-12-19,11:52
+84.0,Male,Hospital,Slip,Evening,1,2025-12-17,22:29
+63.0,Female,Home,Slip,Night,0,2025-07-07,02:30
+41.0,Female,Home,Trip,Afternoon,0,2025-09-12,13:14
+49.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-08-09,13:58
+64.0,Female,Hospital,Trip,Night,0,2025-08-28,03:17
+40.0,Female,Hospital,Slip,Evening,1,2025-09-25,18:15
+83.0,Female,Nursing Home,Slip,Afternoon,0,2024-12-31,17:37
+44.0,Female,Home,Other,Afternoon,0,2025-02-02,14:33
+19.0,Male,Home,Dizziness,Afternoon,0,2025-03-19,15:01
+34.0,Female,Hospital,Slip,Evening,0,2025-08-23,23:12
+50.0,Female,Home,Other,Evening,0,2025-11-29,18:15
+26.0,Female,Nursing Home,Dizziness,Night,0,2025-12-14,02:04
+60.0,Male,Nursing Home,Trip,Evening,0,2025-04-07,21:52
+65.0,Male,Hospital,Dizziness,Evening,0,2025-03-22,22:19
+56.0,Female,Nursing Home,Dizziness,Morning,0,2025-07-10,10:26
+59.0,Male,Nursing Home,Slip,Night,0,2025-09-09,05:57
+43.0,Female,Hospital,Slip,Afternoon,0,2025-02-06,16:26
+69.46119732232428,Male,Nursing Home,Dizziness,Evening,1,2025-01-13,19:06
+37.02457516056079,Male,Nursing Home,Slip,Afternoon,1,2025-12-12,13:46
+41.0,Female,Nursing Home,Slip,Afternoon,1,2025-11-05,16:58
+30.0,Female,Home,Slip,Morning,0,2025-07-27,11:04
+77.0,Male,Hospital,Other,Evening,1,2025-12-22,21:33
+24.0,Male,Hospital,Other,Night,0,2025-03-29,04:14
+71.76201404741794,Male,Hospital,Dizziness,Evening,0,2025-02-24,19:47
+,,Home,Slip,Afternoon,0,2025-04-03,14:08
+62.0,Male,Home,Other,Night,0,2025-04-02,04:53
+37.0,Female,Hospital,Dizziness,Evening,0,2025-12-05,22:57
+82.0,Female,Home,Slip,Afternoon,0,2025-03-25,14:38
+25.0,Male,Hospital,Trip,Afternoon,0,2025-09-01,15:02
+36.25941973968484,Female,Home,Slip,Morning,0,2025-01-21,10:51
+31.0,Female,Nursing Home,Slip,Morning,0,2025-10-17,08:32
+93.0,Male,Nursing Home,Other,Morning,0,2025-09-28,11:57
+32.0,Female,Hospital,Dizziness,Afternoon,0,2025-11-01,14:26
+83.0,Female,Home,Dizziness,Evening,1,2025-05-01,18:20
+49.0,Female,Home,Other,Morning,1,2025-05-07,11:45
+80.0,Female,Nursing Home,Slip,Evening,0,2025-04-22,19:26
+68.0,Female,Nursing Home,Trip,Morning,0,2025-09-29,09:10
+42.0,Female,Home,Slip,Night,0,2025-12-01,01:58
+75.0,Female,Home,Slip,Night,1,2025-05-09,00:34
+80.0,Female,Home,Trip,Morning,0,2025-05-11,08:30
+79.0,Female,Home,Other,Afternoon,0,2025-03-25,15:38
+39.0,Female,Home,Dizziness,Morning,0,2025-12-15,06:24
+75.0,Male,Home,Other,Morning,0,2025-03-21,08:37
+77.23626077746125,Male,Hospital,Other,Afternoon,0,2025-11-20,15:02
+65.96009397824147,Male,Home,Slip,Night,1,2025-03-09,02:01
+69.0,Male,Nursing Home,Dizziness,Evening,0,2025-05-27,19:43
+59.0,Male,Hospital,Dizziness,Morning,0,2025-01-15,10:09
+87.0,Female,Home,Other,Afternoon,1,2025-11-02,16:08
+32.0,Male,Nursing Home,Trip,Morning,0,2025-04-14,07:33
+75.84520275817675,Female,Hospital,Other,Afternoon,0,2025-06-13,15:37
+77.0,Male,Nursing Home,Trip,Evening,0,2025-07-19,22:30
+25.0,Female,Home,Dizziness,Evening,0,2025-07-15,19:49
+70.0,Female,Home,Other,Night,1,2025-07-03,03:35
+68.49911993690588,Female,Home,Slip,Afternoon,0,2025-11-17,17:20
+22.0,Female,Home,Other,Afternoon,1,2025-09-21,12:46
+85.0,Male,Hospital,Dizziness,Night,1,2025-12-28,05:47
+23.0,Female,Hospital,Slip,Night,0,2025-04-09,00:02
+64.0,Male,Nursing Home,Slip,Afternoon,0,2025-12-07,13:04
+72.0,Female,Home,Trip,Night,0,2025-11-15,05:25
+57.0,Male,Nursing Home,Slip,Evening,0,2025-08-01,22:20
+69.0,Female,Hospital,Slip,Morning,0,2025-10-04,10:25
+34.02207185750707,Female,Home,Other,Evening,0,2025-06-10,23:43
+30.0,Male,Home,Dizziness,Night,1,2025-06-05,01:07
+47.0,Male,Hospital,Trip,Afternoon,0,2025-09-07,16:14
+36.0,Male,Hospital,Other,Afternoon,0,2025-04-06,14:15
+30.049149345707587,Male,Hospital,Slip,Evening,0,2025-01-17,18:15
+80.0,Female,Hospital,Slip,Afternoon,0,2025-11-22,16:02
+36.0,Male,Hospital,Trip,Night,0,2025-04-06,03:46
+75.0,Male,Home,Dizziness,Evening,0,2024-12-31,22:55
+72.0,Male,Hospital,Trip,Afternoon,1,2025-08-03,14:20
+79.0,Female,Home,Other,Morning,0,2025-05-11,07:53
+44.59015734339993,Male,Home,Trip,Morning,0,2025-09-16,08:37
+26.0,Male,Hospital,Slip,Night,0,2025-05-04,01:57
+32.4353353481806,Male,Hospital,Other,Afternoon,0,2025-03-22,17:58
+18.0,Female,Home,Slip,Night,0,2025-10-09,05:45
+75.0,Female,Hospital,Dizziness,Evening,1,2025-06-19,18:10
+,,Hospital,Slip,Morning,0,2025-02-27,06:52
+51.0,Male,Hospital,Slip,Evening,0,2025-01-31,23:20
+68.61674109432002,Female,Nursing Home,Trip,Afternoon,0,2025-06-09,14:53
+18.0,Female,Home,Slip,Night,0,2025-10-10,04:55
+33.0,Male,Nursing Home,Other,Night,0,2025-04-15,03:07
+78.0,Female,Hospital,Other,Night,0,2025-04-14,01:45
+81.0,Female,Nursing Home,Dizziness,Evening,0,2025-08-15,19:56
+80.0,Male,Hospital,Other,Morning,1,2025-07-06,10:47
+86.0,Female,Nursing Home,Trip,Evening,1,2025-03-10,18:14
+39.0,Female,Hospital,Dizziness,Evening,0,2025-11-13,23:25
+84.0,Female,Nursing Home,Other,Afternoon,0,2025-10-16,13:28
+93.0,Male,Nursing Home,Trip,Afternoon,0,2025-03-27,17:15
+43.0,Male,Nursing Home,Other,Afternoon,0,2025-12-27,15:19
+33.0,Female,Home,Other,Morning,0,2025-02-24,10:53
+68.0,Female,Nursing Home,Slip,Morning,0,2025-04-22,10:21
+74.0,Female,Home,Other,Afternoon,0,2025-01-12,12:39
+46.0,Female,Hospital,Other,Afternoon,0,2025-01-17,16:15
+,,Nursing Home,Trip,Morning,1,2025-06-30,11:27
+86.0,Female,Hospital,Trip,Night,0,2025-04-22,05:30
+64.0,Male,Hospital,Slip,Morning,0,2025-08-16,11:52
+79.0,Male,Nursing Home,Other,Morning,0,2025-06-19,06:56
+86.0,Female,Home,Slip,Morning,1,2025-10-21,06:56
+93.0,Male,Nursing Home,Other,Afternoon,1,2025-07-07,14:23
+33.0,Female,Hospital,Dizziness,Night,0,2025-03-19,04:25
+73.22690916353568,Male,Hospital,Dizziness,Morning,1,2025-05-25,10:50
+56.0,Male,Nursing Home,Slip,Afternoon,1,2025-06-30,12:42
+50.0,Male,Home,Slip,Evening,1,2025-10-12,21:27
+40.0,Female,Home,Slip,Evening,0,2025-09-06,22:04
+27.0,Female,Hospital,Trip,Morning,0,2025-12-19,07:06
+86.0,Male,Hospital,Trip,Evening,0,2025-11-09,19:35
+51.0,Female,Home,Trip,Night,0,2025-07-14,00:26
+69.0,Female,Nursing Home,Slip,Evening,0,2025-11-18,19:45
+27.0,Female,Hospital,Other,Evening,0,2025-03-11,19:24
+36.0,Male,Home,Dizziness,Night,0,2025-09-04,00:52
+75.0,Female,Hospital,Slip,Morning,1,2025-05-25,08:00
+18.0,Female,Nursing Home,Trip,Morning,0,2025-04-15,07:41
+86.0,Male,Home,Trip,Night,0,2025-09-19,03:24
+21.0,Male,Hospital,Slip,Night,0,2025-10-22,05:02
+38.631737662174885,Female,Nursing Home,Slip,Night,0,2025-03-10,05:57
+41.0,Female,Hospital,Trip,Evening,1,2025-07-11,23:52
+97.0,Male,Nursing Home,Other,Night,0,2025-03-08,01:57
+19.0,Female,Nursing Home,Trip,Afternoon,0,2025-10-31,13:17
+49.0,Female,Home,Trip,Evening,1,2025-02-20,19:11
+41.0,Female,Nursing Home,Slip,Morning,0,2025-12-28,11:36
+28.212893331132946,Female,Hospital,Other,Morning,0,2025-10-11,09:38
+67.0,Female,Nursing Home,Trip,Morning,0,2025-11-29,09:00
+51.99366073256252,Female,Nursing Home,Trip,Evening,0,2025-01-08,18:16
+50.0,Male,Home,Dizziness,Afternoon,0,2025-09-07,14:00
+50.0,Male,Nursing Home,Slip,Night,0,2025-11-27,04:51
+78.0,Female,Nursing Home,Dizziness,Night,0,2025-10-24,04:29
+68.0,Female,Hospital,Dizziness,Morning,0,2025-07-02,06:46
+63.00469190355863,Male,Home,Trip,Morning,0,2025-06-27,08:45
+29.0,Female,Home,Slip,Evening,0,2025-07-16,20:23
+84.0,Female,Home,Other,Afternoon,1,2025-05-07,17:43
+82.0,Female,Nursing Home,Trip,Night,1,2025-01-19,04:25
+50.0,Female,Home,Other,Evening,0,2025-11-23,22:00
+57.0,Female,Nursing Home,Other,Night,0,2025-03-05,01:34
+91.0,Male,Nursing Home,Slip,Morning,0,2025-06-30,09:35
+60.680873373739146,Male,Hospital,Dizziness,Night,0,2025-08-28,02:16
+61.0,Male,Hospital,Slip,Afternoon,1,2025-01-23,14:53
+46.0,Male,Hospital,Other,Afternoon,1,2025-03-23,12:33
+30.0,Female,Hospital,Trip,Morning,0,2025-11-14,08:00
+29.0,Female,Hospital,Other,Afternoon,0,2025-07-03,13:50
+66.52586660954859,Male,Nursing Home,Trip,Afternoon,0,2025-11-11,15:42
+19.0,Female,Nursing Home,Trip,Evening,1,2025-04-08,22:34
+52.0,Male,Home,Slip,Night,0,2025-03-02,04:09
+98.0,Female,Nursing Home,Other,Morning,0,2025-10-12,08:17
+25.0,Female,Nursing Home,Dizziness,Morning,0,2025-01-21,07:38
+43.0,Male,Hospital,Other,Morning,0,2025-07-30,06:41
+91.0,Female,Nursing Home,Other,Morning,0,2025-05-05,07:22
+51.0,Male,Hospital,Dizziness,Morning,1,2025-02-10,08:38
+24.0,Female,Home,Slip,Afternoon,0,2025-04-07,14:11
+73.84839787613485,Female,Home,Other,Evening,0,2025-01-30,18:25
+75.0,Male,Nursing Home,Other,Morning,0,2025-06-06,06:36
+101.40401759396659,Female,Home,Trip,Evening,0,2025-04-21,19:40
+,,Nursing Home,Other,Evening,0,2025-09-03,21:19
+53.0,Male,Home,Dizziness,Afternoon,0,2025-05-01,13:52
+38.0,Female,Hospital,Trip,Morning,0,2025-09-29,09:31
+53.0,Male,Hospital,Slip,Afternoon,0,2025-10-20,15:12
+27.0,Female,Hospital,Trip,Morning,0,2025-07-25,06:59
+90.0,Female,Hospital,Dizziness,Afternoon,1,2025-04-19,14:47
+41.0,Female,Nursing Home,Dizziness,Evening,1,2025-10-04,23:53
+81.0,Male,Home,Trip,Morning,0,2025-02-24,09:56
+66.0,Female,Nursing Home,Slip,Night,0,2025-02-25,00:15
+53.0,Female,Hospital,Trip,Evening,0,2025-10-17,19:18
+99.0,Male,Nursing Home,Slip,Night,0,2025-04-23,00:04
+41.0,Female,Home,Trip,Evening,0,2025-11-03,20:21
+40.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-12-06,14:44
+79.0,Female,Home,Other,Morning,0,2025-07-16,09:36
+54.0,Female,Nursing Home,Other,Evening,0,2025-11-16,22:35
+29.0,Female,Home,Slip,Afternoon,0,2025-06-27,15:03
+72.0,Female,Home,Slip,Morning,1,2025-08-06,09:51
+30.305142917781605,Female,Hospital,Slip,Morning,1,2025-10-03,10:17
+40.0,Female,Home,Dizziness,Evening,0,2025-01-15,19:15
+47.0,Male,Hospital,Trip,Morning,0,2025-03-01,06:17
+34.0,Male,Hospital,Dizziness,Evening,1,2025-02-22,23:01
+79.0,Female,Hospital,Other,Morning,1,2025-06-16,10:35
+30.0,Male,Nursing Home,Slip,Night,0,2025-01-25,03:38
+76.0,Female,Nursing Home,Trip,Afternoon,0,2025-12-01,16:53
+36.0,Male,Nursing Home,Other,Night,0,2025-03-05,01:20
+66.0,Male,Nursing Home,Other,Evening,0,2025-04-09,18:15
+29.0,Female,Home,Other,Night,0,2025-03-14,03:30
+78.0,Female,Home,Dizziness,Evening,0,2025-07-10,20:08
+36.0,Male,Nursing Home,Slip,Morning,0,2025-06-19,11:48
+93.0,Female,Home,Other,Morning,0,2025-09-29,10:01
+17.887673345537202,Female,Home,Slip,Evening,0,2025-07-05,21:47
+88.0,Male,Hospital,Dizziness,Night,0,2025-01-22,05:13
+45.0,Female,Hospital,Other,Morning,0,2025-06-29,08:32
+95.0,Male,Hospital,Dizziness,Afternoon,0,2025-11-22,14:57
+69.0,Male,Hospital,Dizziness,Morning,0,2025-04-17,07:46
+100.0,Female,Home,Slip,Afternoon,1,2025-11-30,14:19
+33.0,Male,Nursing Home,Other,Night,0,2025-06-10,01:50
+81.43103324208239,Female,Home,Dizziness,Afternoon,0,2025-10-28,12:18
+29.0,Female,Home,Other,Afternoon,0,2025-07-24,14:36
+42.0,Male,Home,Slip,Afternoon,0,2025-03-18,13:15
+69.0,Female,Hospital,Dizziness,Afternoon,1,2025-01-15,15:11
+70.0,Female,Hospital,Slip,Morning,0,2025-11-22,10:06
+,,Hospital,Other,Afternoon,0,2025-04-05,17:54
+33.0,Female,Nursing Home,Other,Morning,0,2025-05-26,09:34
+74.0,Female,Home,Slip,Afternoon,0,2025-01-01,16:16
+56.0,Female,Nursing Home,Trip,Evening,1,2025-01-09,19:41
+70.0,Female,Hospital,Dizziness,Night,1,2025-05-04,01:42
+59.0,Male,Nursing Home,Other,Afternoon,0,2025-03-21,12:04
+64.35336474415388,Female,Home,Other,Evening,0,2025-05-19,22:41
+56.0,Female,Home,Dizziness,Afternoon,1,2025-11-21,12:48
+25.548824599071246,Female,Hospital,Slip,Afternoon,1,2025-05-29,12:35
+22.0,Female,Hospital,Slip,Afternoon,0,2025-10-14,15:17
+52.0,Female,Nursing Home,Slip,Evening,0,2025-12-26,18:56
+92.0,Female,Hospital,Trip,Night,0,2025-12-05,04:49
+35.0,Female,Hospital,Trip,Evening,1,2025-05-08,23:24
+93.0,Female,Home,Other,Night,0,2025-08-26,05:55
+26.0,Female,Hospital,Slip,Afternoon,0,2025-02-26,13:28
+90.28875785680107,Female,Hospital,Dizziness,Morning,1,2025-07-16,10:03
+75.0,Female,Home,Other,Afternoon,0,2025-07-29,13:49
+41.573573062472015,Male,Home,Dizziness,Night,0,2025-02-13,00:48
+24.0,Male,Nursing Home,Other,Evening,0,2025-04-06,21:38
+63.0,Female,Hospital,Trip,Afternoon,0,2025-10-05,14:13
+30.0,Female,Home,Other,Evening,0,2025-01-22,20:50
+57.0,Female,Nursing Home,Trip,Evening,0,2025-11-30,19:41
+59.0,Female,Nursing Home,Other,Evening,0,2025-02-12,23:44
+26.0,Female,Hospital,Slip,Afternoon,0,2025-01-26,13:17
+67.0,Female,Hospital,Dizziness,Evening,1,2025-10-08,19:19
+46.053372927099005,Male,Nursing Home,Slip,Evening,0,2025-04-06,19:47
+84.16430305982288,Female,Home,Other,Afternoon,0,2025-02-04,12:56
+22.0,Female,Nursing Home,Other,Evening,0,2025-04-18,23:12
+46.0,Female,Hospital,Other,Afternoon,0,2025-02-23,15:54
+54.0,Female,Home,Trip,Night,0,2025-07-10,05:32
+55.0,Male,Home,Dizziness,Night,0,2025-08-06,03:51
+100.0,Male,Nursing Home,Dizziness,Night,1,2025-07-03,04:07
+25.0,Male,Hospital,Other,Evening,0,2025-03-09,21:33
+82.0,Female,Nursing Home,Other,Morning,0,2025-11-12,09:04
+34.0,Male,Nursing Home,Trip,Morning,0,2025-05-09,11:04
+88.0,Female,Nursing Home,Slip,Evening,1,2025-02-23,22:08
+62.0,Female,Home,Slip,Morning,0,2025-04-06,07:31
+21.0,Male,Home,Dizziness,Afternoon,0,2025-12-01,12:02
+53.0,Female,Hospital,Trip,Morning,0,2025-03-27,11:49
+87.0,Male,Hospital,Other,Evening,1,2025-10-20,21:28
+48.0,Female,Nursing Home,Dizziness,Evening,1,2025-04-28,20:25
+36.0,Male,Nursing Home,Trip,Afternoon,0,2025-07-26,12:29
+78.0,Female,Nursing Home,Slip,Night,0,2025-11-29,00:25
+,,Hospital,Trip,Evening,0,2025-06-02,19:02
+56.0,Female,Home,Slip,Afternoon,0,2025-02-03,17:03
+91.0,Female,Home,Trip,Morning,1,2025-03-19,06:50
+36.0,Female,Nursing Home,Dizziness,Morning,0,2025-03-07,10:38
+56.0,Female,Nursing Home,Slip,Afternoon,0,2025-12-08,15:34
+,,Nursing Home,Dizziness,Afternoon,1,2025-02-02,12:01
+62.0,Female,Nursing Home,Dizziness,Evening,0,2025-04-06,22:53
+24.32447739392144,Female,Hospital,Slip,Morning,0,2025-06-17,06:43
+75.0,Female,Home,Slip,Afternoon,1,2025-06-17,15:46
+37.0,Female,Nursing Home,Other,Morning,0,2025-05-30,07:31
+89.0,Female,Hospital,Other,Afternoon,1,2025-03-11,13:12
+78.0,Male,Nursing Home,Other,Morning,0,2025-01-02,11:04
+56.0,Male,Nursing Home,Dizziness,Night,0,2025-11-09,01:41
+18.0,Female,Home,Dizziness,Evening,1,2025-01-31,21:09
+20.0,Female,Nursing Home,Other,Morning,0,2025-10-13,08:24
+94.0,Female,Home,Dizziness,Night,1,2025-03-22,01:36
+74.87757347173245,Female,Home,Dizziness,Morning,1,2025-02-11,11:06
+76.26536153313903,Female,Home,Slip,Morning,1,2025-04-14,11:53
+42.0,Male,Hospital,Slip,Night,0,2024-12-31,02:12
+73.0,Male,Hospital,Dizziness,Morning,0,2025-03-01,08:25
+50.0,Male,Home,Other,Morning,1,2025-09-26,06:23
+55.0,Female,Nursing Home,Trip,Evening,0,2025-06-28,22:05
+23.0,Female,Home,Other,Night,0,2025-08-11,02:59
+75.0,Male,Nursing Home,Trip,Night,0,2025-01-05,01:48
+,,Home,Other,Afternoon,0,2025-04-12,13:11
+62.0,Female,Nursing Home,Slip,Morning,0,2025-01-09,06:35
+45.46935693906947,Female,Hospital,Dizziness,Evening,0,2025-03-11,19:10
+62.0,Female,Nursing Home,Dizziness,Morning,0,2025-03-30,07:25
+,,Home,Slip,Morning,1,2025-08-13,07:20
+64.0,Female,Hospital,Trip,Afternoon,0,2025-06-06,15:39
+38.0,Female,Nursing Home,Trip,Morning,1,2025-08-15,09:45
+97.0,Male,Nursing Home,Trip,Evening,1,2025-05-05,21:21
+92.0,Female,Nursing Home,Slip,Evening,1,2025-07-27,22:58
+53.0,Male,Nursing Home,Trip,Afternoon,0,2025-04-06,17:49
+36.0,Female,Nursing Home,Slip,Morning,0,2025-03-14,08:59
+37.0,Female,Hospital,Other,Evening,0,2025-04-24,23:07
+74.0,Female,Hospital,Other,Morning,1,2025-07-09,07:56
+35.0,Female,Hospital,Slip,Morning,0,2025-06-18,06:50
+64.0,Male,Hospital,Dizziness,Morning,1,2025-11-02,09:39
+66.0,Female,Home,Other,Afternoon,1,2025-07-22,12:18
+31.0,Male,Hospital,Trip,Morning,0,2025-02-24,10:10
+32.0,Male,Nursing Home,Slip,Evening,0,2025-07-26,20:22
+48.0,Female,Nursing Home,Trip,Morning,0,2025-02-09,08:39
+18.0,Male,Hospital,Trip,Evening,0,2025-01-31,19:26
+71.0,Female,Nursing Home,Dizziness,Morning,1,2025-01-14,11:18
+20.0,Female,Hospital,Trip,Evening,0,2025-03-02,19:41
+,,Nursing Home,Dizziness,Evening,0,2025-06-03,22:38
+74.0,Male,Home,Other,Morning,1,2025-10-10,09:40
+92.0,Male,Home,Slip,Morning,1,2025-07-27,06:18
+29.0,Female,Hospital,Trip,Evening,0,2025-11-15,22:18
+91.0,Female,Hospital,Slip,Night,0,2025-07-05,00:46
+33.0,Male,Hospital,Trip,Afternoon,0,2025-05-09,13:31
+,,Nursing Home,Slip,Night,0,2025-05-06,03:07
+93.0,Female,Hospital,Trip,Night,0,2025-10-18,04:41
+39.242315618756976,Male,Home,Trip,Morning,0,2025-04-23,09:52
+45.0,Female,Nursing Home,Trip,Afternoon,0,2025-07-17,16:48
+,,Hospital,Trip,Night,0,2025-01-12,01:04
+53.0,Female,Nursing Home,Trip,Morning,0,2025-09-27,11:14
+25.0,Male,Nursing Home,Trip,Night,0,2025-03-29,04:27
+75.0,Male,Hospital,Trip,Night,0,2025-08-02,00:42
+77.0,Male,Nursing Home,Trip,Morning,1,2025-10-04,06:42
+67.0,Female,Home,Trip,Morning,0,2025-07-21,07:49
+43.30460813186576,Male,Home,Slip,Morning,0,2025-03-14,10:29
+58.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-01-24,13:15
+81.0,Female,Hospital,Trip,Night,0,2025-04-10,04:38
+44.0,Female,Nursing Home,Dizziness,Morning,0,2025-06-24,06:25
+80.0,Female,Home,Trip,Evening,0,2025-04-26,18:48
+34.0,Female,Nursing Home,Trip,Night,0,2025-06-14,05:01
+86.64337884865759,Female,Nursing Home,Slip,Evening,1,2025-02-09,18:05
+50.0,Female,Home,Other,Afternoon,0,2025-12-09,17:49
+94.67526582906113,Male,Nursing Home,Other,Morning,1,2025-04-29,11:41
+46.0,Female,Nursing Home,Slip,Evening,0,2025-04-06,19:26
+30.0,Male,Hospital,Dizziness,Afternoon,0,2025-05-24,12:07
+63.0,Male,Hospital,Other,Morning,1,2025-08-03,09:09
+52.0,Male,Home,Slip,Evening,0,2025-08-16,18:54
+23.0,Female,Home,Slip,Evening,0,2025-11-08,23:28
+99.0,Male,Home,Other,Afternoon,0,2025-05-09,13:05
+86.0,Male,Hospital,Dizziness,Morning,0,2025-12-17,11:21
+64.0,Male,Home,Slip,Morning,0,2025-11-13,11:05
+42.0,Male,Home,Trip,Evening,0,2025-05-16,19:38
+83.0,Female,Home,Dizziness,Evening,0,2025-11-19,21:34
+27.0,Female,Hospital,Dizziness,Evening,0,2025-12-02,23:21
+,,Nursing Home,Other,Morning,0,2025-09-29,08:22
+47.0,Female,Home,Other,Afternoon,0,2025-04-26,13:24
+22.0,Female,Nursing Home,Trip,Afternoon,0,2025-11-01,16:20
+50.0,Male,Home,Slip,Morning,0,2025-04-03,06:09
+82.0,Male,Nursing Home,Other,Night,1,2025-06-16,04:54
+35.0,Female,Hospital,Other,Afternoon,0,2025-07-21,14:08
+66.0,Female,Hospital,Dizziness,Evening,1,2025-12-06,21:01
+28.0,Male,Home,Other,Night,0,2025-05-28,00:12
+43.0,Female,Nursing Home,Other,Night,0,2025-07-01,01:50
+80.0,Male,Hospital,Other,Afternoon,0,2025-05-31,13:33
+,,Home,Other,Night,0,2025-03-14,02:37
+44.0,Male,Home,Dizziness,Night,0,2025-12-30,02:41
+66.0,Male,Hospital,Trip,Afternoon,0,2025-09-30,14:05
+94.0,Male,Hospital,Trip,Afternoon,0,2025-02-10,12:18
+50.0,Female,Home,Slip,Night,1,2025-07-30,02:17
+18.0,Female,Nursing Home,Other,Evening,0,2025-04-10,18:51
+38.0,Male,Nursing Home,Dizziness,Morning,0,2025-02-13,09:04
+72.0,Male,Nursing Home,Slip,Night,1,2025-03-22,02:10
+23.0,Female,Home,Slip,Night,0,2025-01-16,00:29
+98.0,Male,Hospital,Trip,Evening,0,2025-03-13,21:04
+86.0,Male,Home,Dizziness,Night,1,2025-01-13,00:26
+,,Hospital,Dizziness,Night,1,2025-06-05,03:28
+20.0,Male,Nursing Home,Dizziness,Morning,0,2025-08-10,07:11
+68.42792608316613,Female,Nursing Home,Trip,Morning,0,2025-05-11,10:40
+40.0,Female,Hospital,Trip,Morning,0,2025-12-03,07:36
+70.0,Male,Hospital,Trip,Afternoon,1,2025-02-15,16:15
+54.0,Male,Home,Trip,Afternoon,0,2025-04-16,14:21
+91.0,Male,Nursing Home,Trip,Morning,0,2025-04-17,09:10
+,,Home,Other,Morning,0,2025-09-21,07:45
+100.0,Female,Home,Other,Afternoon,0,2025-07-23,16:34
+26.022163768888863,Female,Home,Dizziness,Evening,0,2025-03-19,23:14
+95.0,Male,Nursing Home,Slip,Night,1,2025-06-03,03:30
+90.0,Female,Home,Dizziness,Night,0,2025-09-27,01:40
+18.0,Female,Home,Slip,Morning,0,2025-09-03,08:15
+68.0,Female,Home,Trip,Evening,1,2025-01-18,19:48
+62.0,Female,Home,Slip,Afternoon,0,2025-12-11,14:01
+94.0,Female,Home,Dizziness,Morning,1,2025-01-25,07:37
+21.0,Female,Home,Dizziness,Evening,0,2025-08-04,20:39
+79.0,Female,Nursing Home,Slip,Evening,0,2025-06-02,19:28
+82.0,Male,Home,Other,Evening,0,2025-06-02,20:57
+49.0,Male,Hospital,Trip,Afternoon,0,2025-06-22,17:24
+51.0,Female,Home,Trip,Afternoon,1,2025-04-01,12:52
+89.0,Male,Home,Dizziness,Night,1,2025-12-03,02:53
+56.0,Female,Nursing Home,Other,Night,0,2025-06-29,01:17
+43.0,Female,Nursing Home,Slip,Evening,0,2025-05-10,18:37
+51.0,Female,Hospital,Trip,Evening,0,2025-10-24,22:56
+71.0,Male,Hospital,Other,Afternoon,1,2025-10-01,12:20
+,,Nursing Home,Trip,Night,0,2025-09-29,02:41
+67.0,Male,Nursing Home,Other,Evening,0,2025-03-16,20:05
+29.0,Female,Home,Other,Night,0,2025-06-25,03:35
+82.0,Female,Nursing Home,Dizziness,Night,1,2025-07-02,03:44
+71.0,Female,Hospital,Trip,Evening,0,2025-11-14,18:58
+22.0,Female,Home,Slip,Afternoon,0,2025-05-10,13:51
+74.0,Female,Hospital,Dizziness,Evening,0,2025-12-28,20:11
+34.0,Female,Home,Dizziness,Evening,0,2025-02-17,21:01
+64.0,Male,Nursing Home,Slip,Night,1,2025-02-23,05:21
+40.17190911128968,Female,Hospital,Dizziness,Evening,1,2025-06-02,23:04
+96.0,Male,Home,Other,Afternoon,0,2025-12-20,12:20
+31.0,Male,Home,Other,Evening,0,2025-07-18,20:04
+83.0,Female,Nursing Home,Trip,Afternoon,0,2025-11-03,14:26
+92.0,Male,Nursing Home,Trip,Afternoon,0,2025-12-21,12:01
+68.0,Female,Nursing Home,Slip,Night,0,2025-04-27,00:38
+55.0,Female,Hospital,Trip,Morning,0,2025-09-19,11:45
+80.41618001109212,Female,Home,Other,Morning,0,2025-02-14,10:50
+55.0,Male,Nursing Home,Slip,Night,0,2025-10-28,03:59
+67.0,Female,Hospital,Slip,Evening,0,2025-12-21,20:22
+99.0,Female,Hospital,Trip,Night,0,2025-07-07,00:01
+47.0,Female,Hospital,Other,Afternoon,0,2025-11-05,12:26
+,,Nursing Home,Slip,Morning,0,2025-11-13,08:01
+68.0,Male,Nursing Home,Other,Night,1,2025-05-08,04:20
+80.0,Female,Home,Other,Evening,0,2025-02-17,19:04
+69.0,Male,Home,Other,Night,0,2025-01-24,03:44
+55.0,Female,Nursing Home,Trip,Morning,1,2025-09-22,10:28
+96.0,Female,Hospital,Dizziness,Night,1,2025-04-27,03:37
+47.0,Female,Hospital,Dizziness,Night,0,2025-05-23,03:49
+68.0,Female,Hospital,Slip,Morning,1,2025-07-18,06:01
+98.0,Female,Home,Other,Afternoon,0,2025-06-05,12:31
+22.0,Female,Hospital,Trip,Afternoon,0,2025-12-13,13:05
+46.0,Female,Home,Other,Morning,0,2025-05-13,06:56
+21.0,Female,Home,Other,Night,0,2025-05-27,02:32
+27.0,Male,Hospital,Trip,Morning,0,2025-12-01,06:50
+73.0,Male,Hospital,Dizziness,Afternoon,0,2025-03-11,16:12
+34.0,Female,Nursing Home,Other,Evening,0,2025-08-20,20:11
+91.0,Male,Nursing Home,Other,Night,0,2025-11-29,00:56
+34.0,Female,Hospital,Dizziness,Afternoon,0,2025-10-25,14:34
+86.0,Male,Home,Trip,Night,0,2025-06-02,03:29
+48.04349276651731,Female,Home,Slip,Morning,0,2025-03-30,10:33
+,,Home,Dizziness,Evening,0,2025-11-29,23:38
+70.0,Female,Home,Slip,Morning,1,2025-07-17,10:56
+83.0,Female,Home,Slip,Evening,1,2025-06-09,23:02
+94.0,Female,Nursing Home,Dizziness,Night,0,2025-01-25,03:52
+60.0,Female,Hospital,Other,Night,0,2025-04-30,03:30
+92.0,Female,Nursing Home,Slip,Morning,0,2025-10-27,10:23
+40.0,Male,Home,Slip,Evening,0,2025-07-30,23:32
+72.0,Female,Home,Trip,Evening,0,2025-03-03,19:19
+97.0,Female,Home,Other,Night,0,2025-03-08,03:15
+92.0,Male,Home,Slip,Morning,0,2025-09-09,07:51
+33.0,Male,Hospital,Trip,Evening,0,2025-01-01,21:12
+25.0,Female,Home,Other,Night,0,2025-04-17,04:41
+21.0,Male,Hospital,Dizziness,Afternoon,0,2025-10-12,12:45
+21.0,Male,Home,Dizziness,Morning,0,2025-02-17,11:23
+73.0,Female,Hospital,Trip,Afternoon,1,2025-05-19,15:08
+42.0,Female,Nursing Home,Dizziness,Morning,0,2025-08-05,07:22
+84.0,Female,Home,Slip,Night,0,2025-02-12,01:12
+84.0,Female,Hospital,Other,Evening,0,2025-09-25,21:58
+44.0,Female,Nursing Home,Slip,Evening,0,2025-03-18,19:14
+,,Home,Slip,Evening,0,2025-08-03,21:48
+67.0,Male,Home,Dizziness,Morning,0,2025-04-07,10:21
+78.0,Female,Home,Slip,Night,0,2025-08-23,00:09
+70.9853628050568,Male,Hospital,Dizziness,Afternoon,0,2025-10-08,13:48
+36.0,Female,Hospital,Other,Night,0,2025-05-28,01:06
+38.0,Female,Nursing Home,Other,Afternoon,0,2025-10-30,15:25
+22.0,Female,Hospital,Slip,Morning,0,2025-03-06,10:59
+99.0,Male,Hospital,Trip,Morning,1,2025-08-21,08:25
+59.0,Female,Home,Dizziness,Afternoon,0,2025-03-27,13:28
+78.0,Female,Home,Dizziness,Afternoon,0,2025-03-19,16:13
+39.0,Male,Home,Slip,Afternoon,0,2025-07-23,12:32
+32.317750306696475,Male,Home,Dizziness,Night,0,2025-10-05,00:20
+,,Home,Dizziness,Afternoon,0,2025-12-02,12:22
+18.0,Male,Home,Trip,Morning,0,2025-09-10,06:42
+22.0,Female,Home,Trip,Morning,1,2025-10-30,06:57
+,,Nursing Home,Slip,Evening,0,2025-05-09,23:28
+63.0,Male,Nursing Home,Trip,Afternoon,0,2025-03-24,15:29
+51.0,Female,Nursing Home,Slip,Night,0,2025-10-02,02:52
+59.78910465135753,Male,Nursing Home,Other,Night,0,2025-07-05,04:17
+95.0,Female,Home,Slip,Night,1,2025-02-14,05:45
+62.0,Male,Nursing Home,Other,Evening,0,2025-07-01,18:38
+,,Home,Slip,Morning,0,2025-09-24,07:08
+90.0,Female,Nursing Home,Dizziness,Night,1,2025-10-22,00:31
+43.0,Female,Hospital,Trip,Morning,0,2025-11-17,10:53
+64.0,Female,Nursing Home,Other,Evening,0,2025-04-09,18:18
+73.0,Female,Nursing Home,Slip,Afternoon,1,2025-03-18,14:05
+80.0,Female,Home,Trip,Afternoon,0,2025-09-28,14:55
+65.0,Male,Nursing Home,Slip,Afternoon,0,2025-12-04,16:33
+78.0,Male,Hospital,Trip,Night,0,2025-06-10,03:24
+98.0,Female,Home,Trip,Afternoon,1,2025-02-12,15:09
+43.0,Female,Home,Slip,Night,0,2025-08-25,01:23
+53.0,Female,Nursing Home,Other,Evening,0,2025-05-13,22:10
+18.0,Male,Home,Other,Evening,0,2025-07-10,20:15
+25.0,Male,Home,Dizziness,Night,0,2025-12-21,01:29
+69.0,Female,Home,Trip,Morning,1,2025-10-04,06:15
+96.0,Female,Home,Dizziness,Afternoon,0,2025-01-17,14:57
+64.0,Female,Home,Dizziness,Afternoon,0,2025-01-11,17:11
+73.0,Female,Home,Slip,Afternoon,1,2025-06-28,14:48
+31.0,Female,Hospital,Slip,Night,0,2025-05-02,04:49
+45.0,Male,Nursing Home,Slip,Evening,0,2025-09-02,20:35
+93.3755818900413,Female,Hospital,Trip,Afternoon,0,2025-08-09,12:31
+19.0,Male,Home,Slip,Evening,1,2025-02-19,18:05
+43.0,Male,Home,Slip,Afternoon,0,2025-03-11,14:19
+31.0,Female,Nursing Home,Trip,Afternoon,0,2025-02-16,12:01
+76.0,Female,Hospital,Trip,Night,0,2025-01-18,00:27
+73.0,Female,Nursing Home,Other,Morning,0,2025-09-18,10:37
+24.0,Male,Hospital,Slip,Night,0,2025-03-24,02:19
+20.0,Male,Home,Slip,Afternoon,0,2025-06-03,17:38
+40.0,Male,Nursing Home,Slip,Afternoon,1,2025-02-21,12:54
+35.0,Male,Nursing Home,Other,Morning,0,2025-04-16,06:36
+58.11466134905982,Female,Home,Slip,Evening,0,2025-12-22,23:44
+32.0,Male,Nursing Home,Other,Evening,0,2025-10-30,19:46
+81.0,Female,Hospital,Dizziness,Afternoon,0,2025-05-14,16:25
+45.0,Male,Hospital,Other,Evening,1,2025-03-09,18:13
+91.0,Male,Hospital,Dizziness,Afternoon,0,2025-01-10,13:53
+56.0,Male,Hospital,Slip,Morning,0,2025-05-22,11:57
+74.0,Female,Home,Dizziness,Morning,0,2025-07-10,08:30
+34.0,Female,Nursing Home,Other,Afternoon,0,2025-03-09,16:41
+61.0,Female,Hospital,Trip,Morning,0,2025-01-22,06:13
+42.0,Female,Home,Dizziness,Night,0,2025-06-29,03:57
+43.05163795361348,Female,Nursing Home,Dizziness,Night,0,2025-10-19,04:53
+30.0,Male,Nursing Home,Slip,Morning,1,2025-01-08,08:24
+42.0,Male,Home,Other,Afternoon,0,2025-09-27,14:31
+85.0,Female,Home,Dizziness,Afternoon,1,2025-04-02,15:17
+27.0,Female,Hospital,Dizziness,Morning,0,2025-01-16,11:17
+84.0,Male,Nursing Home,Dizziness,Evening,0,2025-06-02,22:25
+35.0,Female,Nursing Home,Dizziness,Night,0,2025-11-23,00:59
+51.0,Female,Home,Trip,Evening,0,2025-05-28,20:07
+25.0,Male,Nursing Home,Other,Afternoon,0,2025-09-23,15:53
+57.0,Female,Hospital,Slip,Afternoon,0,2025-11-23,13:21
+100.0,Female,Nursing Home,Slip,Evening,0,2025-04-15,20:29
+59.0,Female,Home,Trip,Morning,0,2025-02-03,10:27
+58.0,Male,Home,Other,Evening,0,2025-04-28,20:42
+23.0,Male,Hospital,Dizziness,Evening,0,2025-01-13,20:30
+69.0,Female,Hospital,Trip,Night,0,2025-01-13,00:47
+43.0,Female,Nursing Home,Other,Night,0,2025-09-22,03:29
+81.0,Female,Nursing Home,Dizziness,Evening,0,2025-05-19,20:11
+76.0,Female,Home,Trip,Evening,0,2025-10-20,20:36
+73.0,Male,Hospital,Other,Afternoon,1,2025-12-29,16:14
+76.0,Female,Hospital,Slip,Night,0,2025-04-28,04:49
+87.0,Male,Hospital,Slip,Night,0,2025-08-25,02:25
+53.29467677426842,Female,Nursing Home,Other,Afternoon,1,2025-02-02,15:01
+70.0,Female,Hospital,Slip,Morning,0,2025-06-17,09:14
+39.0,Male,Home,Other,Night,0,2025-01-09,03:03
+38.0,Female,Home,Dizziness,Night,0,2025-05-01,05:49
+87.0,Male,Nursing Home,Other,Morning,1,2025-05-24,11:22
+87.0,Male,Nursing Home,Dizziness,Night,0,2025-08-10,02:25
+21.0,Male,Hospital,Trip,Night,0,2025-09-13,02:10
+92.0,Male,Nursing Home,Other,Morning,0,2025-09-24,09:55
+79.0,Female,Home,Trip,Morning,0,2025-12-24,07:58
+79.0,Female,Hospital,Slip,Evening,0,2025-01-03,22:10
+41.0,Male,Home,Dizziness,Afternoon,0,2025-12-19,16:17
+72.0,Female,Hospital,Other,Afternoon,0,2025-04-15,17:49
+31.42413870078054,Male,Nursing Home,Trip,Morning,1,2025-03-25,11:53
+21.733488142508318,Female,Hospital,Dizziness,Morning,0,2025-08-01,07:34
+44.57442010178635,Female,Hospital,Dizziness,Night,0,2025-04-30,00:34
+57.0,Female,Home,Slip,Evening,1,2025-05-11,20:43
+56.25855538298456,Male,Home,Slip,Evening,0,2025-12-03,21:02
+41.0,Female,Hospital,Dizziness,Morning,0,2025-07-15,10:38
+23.0,Female,Nursing Home,Dizziness,Night,0,2025-01-18,05:55
+83.0,Female,Nursing Home,Other,Night,1,2025-05-09,03:10
+92.0,Male,Home,Dizziness,Afternoon,1,2025-01-11,12:20
+21.0,Male,Nursing Home,Other,Afternoon,0,2025-03-21,13:42
+96.0,Female,Home,Dizziness,Night,1,2025-11-25,02:47
+23.0,Female,Nursing Home,Slip,Afternoon,0,2025-12-19,17:20
+68.0,Male,Hospital,Other,Morning,1,2025-09-18,09:51
+79.0,Male,Home,Trip,Night,1,2025-05-04,03:31
+74.0,Female,Home,Slip,Afternoon,0,2025-11-02,13:22
+83.0,Male,Hospital,Other,Evening,1,2025-09-23,22:04
+96.0,Female,Home,Other,Night,0,2025-05-19,03:27
+92.0,Female,Nursing Home,Trip,Night,0,2025-11-24,05:07
+25.0,Male,Nursing Home,Other,Evening,0,2025-01-01,18:56
+43.0,Female,Home,Dizziness,Morning,0,2025-01-07,08:34
+68.0,Male,Nursing Home,Trip,Evening,1,2025-09-06,22:20
+61.571959755359394,Male,Home,Slip,Night,0,2025-05-18,01:17
+61.0,Female,Hospital,Slip,Morning,0,2025-05-03,06:07
+22.0,Female,Home,Dizziness,Afternoon,0,2025-11-04,14:48
+87.0,Female,Hospital,Slip,Afternoon,1,2025-08-15,12:42
+43.0,Female,Nursing Home,Other,Afternoon,0,2025-01-09,13:05
+85.0,Male,Hospital,Other,Night,1,2025-07-30,05:13
+36.0,Male,Nursing Home,Dizziness,Evening,0,2025-04-21,20:11
+37.0,Male,Home,Slip,Morning,0,2025-01-07,09:11
+30.885169189140065,Male,Nursing Home,Slip,Afternoon,0,2025-10-18,16:01
+64.0,Male,Home,Dizziness,Morning,0,2025-12-27,07:14
+18.0,Male,Home,Trip,Night,0,2025-09-09,04:16
+31.0,Male,Hospital,Slip,Afternoon,0,2025-01-13,17:27
+81.0,Male,Hospital,Trip,Night,0,2025-08-27,05:43
+50.26985086824519,Female,Hospital,Slip,Evening,0,2025-08-29,23:16
+54.0,Female,Hospital,Slip,Night,0,2025-12-07,05:05
+28.0,Male,Nursing Home,Slip,Night,1,2025-05-28,02:23
+94.0,Female,Nursing Home,Slip,Evening,0,2025-08-23,23:26
+20.0,Female,Nursing Home,Other,Morning,0,2025-11-01,07:23
+50.0,Male,Home,Trip,Evening,0,2025-06-15,22:55
+23.0,Female,Nursing Home,Trip,Evening,0,2025-01-19,23:33
+67.0,Female,Nursing Home,Slip,Night,1,2025-08-03,02:21
+27.0,Female,Nursing Home,Slip,Morning,0,2025-12-08,11:23
+22.0,Male,Hospital,Trip,Afternoon,0,2025-05-14,12:17
+42.33222900419903,Female,Nursing Home,Other,Evening,0,2025-05-08,21:11
+27.0,Male,Home,Dizziness,Morning,0,2025-10-20,06:42
+61.0,Female,Hospital,Dizziness,Evening,0,2025-09-02,21:39
+19.0,Female,Home,Trip,Evening,0,2025-07-07,21:06
+30.0,Female,Nursing Home,Slip,Evening,0,2025-02-12,22:33
+57.0,Female,Hospital,Slip,Evening,1,2025-03-26,20:21
+19.0,Female,Home,Other,Night,0,2025-02-12,01:34
+82.0,Male,Nursing Home,Dizziness,Morning,0,2025-11-25,09:28
+,,Home,Other,Morning,1,2025-05-24,07:27
+90.0,Female,Home,Dizziness,Morning,0,2025-02-19,08:17
+,,Home,Trip,Evening,0,2025-08-29,23:17
+26.0,Male,Nursing Home,Dizziness,Night,0,2025-10-20,03:23
+91.39745901617052,Male,Nursing Home,Other,Evening,0,2025-02-19,19:53
+32.0,Male,Home,Other,Evening,0,2025-09-22,22:52
+41.0,Female,Hospital,Other,Morning,0,2025-04-29,09:26
+55.0,Female,Hospital,Trip,Evening,0,2025-07-18,21:04
+52.0,Female,Nursing Home,Dizziness,Afternoon,0,2025-09-04,12:48
+66.0,Female,Nursing Home,Dizziness,Evening,1,2025-03-10,19:29
+86.0,Female,Nursing Home,Other,Afternoon,0,2025-12-06,13:56
+79.0,Male,Nursing Home,Dizziness,Evening,0,2025-02-25,22:33
+78.15628873592041,Female,Nursing Home,Slip,Night,0,2025-02-07,03:38
+67.0,Male,Hospital,Slip,Night,0,2025-10-15,05:38
+95.0,Female,Nursing Home,Slip,Morning,0,2025-01-17,09:13
+,,Home,Dizziness,Evening,0,2025-08-07,22:49
+26.0,Male,Home,Trip,Afternoon,0,2025-11-08,17:03
+51.0,Female,Hospital,Trip,Afternoon,0,2025-08-31,13:17
+93.0,Female,Home,Trip,Evening,0,2025-12-17,21:47
+52.0,Female,Hospital,Trip,Afternoon,0,2025-10-30,12:06
+18.0,Male,Hospital,Slip,Night,0,2025-10-24,05:27
+57.0,Female,Home,Slip,Afternoon,0,2025-10-09,16:02
+80.57463412587434,Female,Nursing Home,Other,Morning,0,2025-03-14,09:30
+39.0,Male,Home,Dizziness,Night,0,2025-04-19,01:57
+77.0,Male,Home,Dizziness,Night,1,2025-06-28,03:18
+81.0,Female,Hospital,Trip,Night,0,2025-01-31,03:10
+89.0,Male,Home,Slip,Evening,0,2025-08-21,20:22
+,,Hospital,Trip,Evening,0,2025-10-08,22:06
+31.0,Female,Nursing Home,Other,Night,0,2025-01-24,05:33
+77.0,Female,Nursing Home,Dizziness,Evening,0,2025-11-26,19:18
+45.61398442329158,Male,Nursing Home,Dizziness,Afternoon,0,2025-10-05,13:08
+52.0,Female,Home,Trip,Evening,1,2025-08-13,20:17
+54.0,Male,Hospital,Other,Evening,0,2025-02-25,18:47
+,,Nursing Home,Dizziness,Night,1,2025-06-28,04:41
+100.0,Female,Hospital,Other,Morning,0,2025-08-19,06:51
+92.96954435554218,Male,Hospital,Other,Morning,0,2025-12-08,11:43
+43.0,Male,Nursing Home,Trip,Morning,0,2025-10-13,06:18
+79.0,Female,Nursing Home,Slip,Afternoon,0,2025-03-04,14:39
+21.0,Male,Hospital,Trip,Evening,0,2025-08-19,19:03
+59.0,Male,Nursing Home,Slip,Morning,0,2025-10-15,08:18
+35.0,Female,Hospital,Other,Night,0,2025-07-31,03:20
+57.0,Female,Hospital,Slip,Morning,1,2025-09-14,08:46
+81.05655934811205,Female,Nursing Home,Other,Morning,1,2025-01-17,11:32
+,,Home,Dizziness,Evening,0,2025-06-23,19:18
+31.0,Female,Nursing Home,Dizziness,Evening,0,2025-08-16,23:21
+49.0,Male,Home,Dizziness,Evening,0,2025-08-13,20:36
+68.0,Male,Hospital,Trip,Afternoon,0,2025-03-24,12:17
+55.0,Female,Hospital,Trip,Afternoon,0,2025-10-17,14:47
+40.0,Male,Home,Other,Morning,0,2025-09-02,07:11
+70.63014962158778,Male,Hospital,Dizziness,Evening,0,2025-04-19,23:05
+32.0,Female,Home,Trip,Morning,0,2025-09-10,08:58
+42.0,Female,Home,Dizziness,Night,1,2025-03-28,03:28
+34.0,Female,Hospital,Trip,Night,0,2025-03-12,02:29
+83.0,Male,Home,Slip,Evening,1,2025-01-29,19:08
+95.0,Male,Nursing Home,Slip,Evening,0,2025-06-20,19:28
+70.0,Male,Nursing Home,Dizziness,Night,0,2025-11-04,00:09
+68.0,Male,Hospital,Other,Evening,0,2025-12-08,19:43
+56.92208284713489,Female,Hospital,Trip,Afternoon,0,2025-06-25,16:53
+65.76391092635572,Female,Home,Trip,Afternoon,0,2025-05-18,15:32
+87.0,Female,Home,Slip,Evening,1,2025-07-12,23:43
+23.0,Female,Home,Slip,Night,0,2025-07-04,04:18
+84.0,Female,Home,Other,Morning,0,2025-08-05,08:00
+15.354504112839747,Female,Nursing Home,Other,Evening,0,2025-06-12,20:51
+68.0,Male,Nursing Home,Other,Evening,0,2025-06-09,18:39
+89.0,Female,Hospital,Dizziness,Morning,0,2025-01-12,10:16
+59.0,Female,Home,Slip,Evening,0,2025-10-22,23:07
+81.0,Male,Home,Dizziness,Morning,0,2025-03-29,06:41
+32.0,Male,Hospital,Slip,Night,0,2025-11-19,01:08
+46.5326748352689,Female,Home,Slip,Afternoon,1,2025-02-10,14:49
+50.0,Male,Home,Trip,Night,0,2025-07-28,04:53
+44.0,Male,Home,Slip,Afternoon,0,2025-08-16,15:49
+53.0,Female,Home,Slip,Morning,0,2025-12-15,06:02
+46.0,Female,Home,Dizziness,Afternoon,0,2025-10-01,15:54
+55.0,Female,Hospital,Slip,Night,0,2025-10-05,05:23
+,,Home,Dizziness,Afternoon,0,2025-09-07,13:45
+44.0,Male,Hospital,Other,Morning,0,2025-11-05,11:10
+72.0,Female,Home,Slip,Afternoon,1,2025-07-26,14:34
+50.0,Male,Nursing Home,Slip,Evening,0,2025-11-16,18:45
+85.0,Female,Nursing Home,Dizziness,Night,0,2025-05-19,05:07
+,,Nursing Home,Other,Evening,0,2025-10-06,23:36
+27.0,Male,Nursing Home,Trip,Morning,1,2025-02-02,08:27
+22.0,Male,Hospital,Other,Afternoon,0,2025-11-04,13:31
+88.50193203388633,Male,Hospital,Dizziness,Evening,0,2025-01-17,21:16
+55.0,Male,Home,Other,Evening,0,2025-02-25,18:46
+30.0,Male,Nursing Home,Dizziness,Afternoon,0,2025-04-21,17:51
+48.0,Female,Hospital,Dizziness,Afternoon,1,2025-01-04,17:15
+,,Home,Trip,Night,0,2025-06-30,04:08
+69.0,Male,Home,Slip,Evening,1,2025-01-12,18:59
+73.0,Male,Hospital,Dizziness,Evening,1,2025-12-04,18:28
+32.0,Male,Nursing Home,Dizziness,Morning,0,2025-10-11,10:20
+46.0,Female,Home,Trip,Night,0,2025-09-15,01:20
+25.0,Male,Nursing Home,Dizziness,Morning,0,2025-03-30,10:09
+22.0,Female,Nursing Home,Slip,Evening,1,2025-04-13,23:55
+46.0,Female,Nursing Home,Trip,Morning,0,2025-07-04,08:56
+65.23404659090426,Female,Home,Slip,Evening,1,2025-09-06,22:00
+85.0,Female,Nursing Home,Slip,Evening,0,2025-09-11,21:56
+93.0,Male,Home,Trip,Morning,1,2025-03-16,11:07
+62.0,Female,Nursing Home,Dizziness,Morning,0,2025-04-17,07:08
+19.0,Male,Home,Slip,Afternoon,0,2025-06-04,12:40
+44.0,Male,Nursing Home,Slip,Afternoon,1,2025-03-22,14:10
+53.0,Female,Hospital,Slip,Afternoon,1,2025-03-17,15:09
+53.0,Female,Nursing Home,Slip,Evening,1,2025-09-14,18:48
+43.0,Female,Nursing Home,Trip,Morning,0,2025-05-06,06:24
+60.0,Male,Home,Trip,Night,0,2025-10-08,02:53
+44.0,Male,Home,Other,Evening,0,2025-03-28,21:38
+86.0,Female,Nursing Home,Other,Night,0,2025-07-22,04:25
+,,Hospital,Slip,Morning,0,2025-01-15,11:38
+28.0,Female,Hospital,Dizziness,Evening,0,2025-05-30,18:55
+91.0,Female,Home,Slip,Night,0,2025-09-10,05:03
+55.0,Female,Hospital,Dizziness,Night,1,2025-07-06,04:29
+23.0,Male,Nursing Home,Slip,Afternoon,0,2025-11-24,15:55
+89.0,Female,Home,Other,Afternoon,1,2025-01-31,14:12
+40.0,Male,Nursing Home,Other,Afternoon,0,2025-09-27,15:30
+64.0,Female,Home,Dizziness,Evening,0,2025-01-04,23:42
+63.0,Female,Home,Slip,Morning,0,2025-11-25,09:51

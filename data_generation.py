@@ -37,7 +37,7 @@ def generate_synthetic_fall_data(n_samples=1000):
     np.random.seed(42)  # For reproducibility
     
     # Generate base features with some correlations
-    age = np.random.randint(18, 101, size=n_samples).clip(lower=18, upper=100) # Age around 70, correlated with risk
+    age = np.random.normal(loc=70, scale=15, size=n_samples).clip(18, 100).astype(int) # Age around 70, correlated with risk
     gender = np.random.choice(['Male', 'Female'], n_samples, p=[0.4, 0.6])  # Slight imbalance
     location = np.random.choice(['Home', 'Hospital', 'Nursing Home'], n_samples)
     cause = np.random.choice(['Slip', 'Trip', 'Dizziness', 'Other'], n_samples)
@@ -79,8 +79,14 @@ def generate_synthetic_fall_data(n_samples=1000):
         'fall_date': fall_date,
         'fall_time': fall_time
     })
+    # Introduce missing values
+    # ~5% missing for age
+    missing_age_idx = np.random.choice(data.index, size=int(0.05 * n_samples), replace=False)
+    data.loc[missing_age_idx, 'age'] = np.nan
     
-    data['gender'] = data['gender'].where(pd.notna(data['gender']), None)
+    # ~3% missing for gender
+    missing_gender_idx = np.random.choice(data.index, size=int(0.03 * n_samples), replace=False)
+    data.loc[missing_gender_idx, 'gender'] = np.nan
     
     return data
 

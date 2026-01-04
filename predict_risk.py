@@ -14,38 +14,47 @@ from typing import Tuple, Any
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def preprocess_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, dict]:
+def preprocess_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, dict, dict]:
     """
     Preprocesses the dataset by imputing missing values, encoding categoricals, and adding features.
     
     Parameters:
-    df (pd.DataFrame): Input dataframe with columns age, gender, location, cause, time_of_day, fall_occurred, fall_date, fall_time, injury.
+    df (pd.DataFrame): Input dataframe with columns age, gender, location, cause, time_of_day, fall_occurred, fall_date, fall_time.
     
     Returns:
-    Tuple[pd.DataFrame, dict]: Preprocessed dataframe and dictionary of encoders.
+    Tuple[pd.DataFrame, dict, dict]: Preprocessed dataframe and dictionaries of encoders and imputers.
     """
     df = df.copy()
     
-    # Impute missing age (numerical) with mean
+    # Impute and save imputers
     age_imputer = SimpleImputer(strategy='mean')
     df['age'] = age_imputer.fit_transform(df[['age']])
     
-    # Impute missing gender (categorical) with most frequent
     gender_imputer = SimpleImputer(strategy='most_frequent')
     df['gender'] = gender_imputer.fit_transform(df[['gender']]).ravel()
     
     # Encode categorical features
-    categorical_features = ['location', 'cause']
+    categorical_features = ['location', 'cause', 'gender']
     encoders = {}
     for col in categorical_features:
+        df[col] = df[col].fillna('Unknown').astype(str)
         le = LabelEncoder()
-        df[col] = le.fit_transform(df[col].astype(str))
+        le.fit(df[col])
+        if 'Unknown' not in le.classes_:
+            le.classes_ = np.append(le.classes_, 'Unknown')
+        df[col] = df[col].map(lambda x: le.transform([x])[0] if x in le.classes_ else le.transform(['Unknown'])[0])
         encoders[col] = le
     
-    # Add Hour feature from fall_time
+    # Add Hour feature
     df['Hour'] = pd.to_datetime(df['fall_time'], format='%H:%M', errors='coerce').dt.hour.fillna(12)
     
-    return df, encoders
+    # Save imputers in dict
+    imputers = {
+        'age': age_imputer,
+        'gender': gender_imputer
+    }
+    
+    return df, encoders, imputers
 
 def train_model(data_path: str) -> Tuple[Any, dict]:
     """
@@ -64,15 +73,15 @@ def train_model(data_path: str) -> Tuple[Any, dict]:
         
         # Preprocess data
         logging.info("Starting data preprocessing")
-        df, encoders = preprocess_data(df)
+        df, encoders, imputers = preprocess_data(df)
         logging.info("Data preprocessing completed")
         
         # Prepare features and target
-        features = ['location', 'cause', 'Hour']
+        features = ['age','location', 'cause', 'gender', 'Hour']
         X = df[features]
         y = df['fall_occurred']
         
-        # Split data into train/validation/test (60/20/20 for example, but prompt says train/validation/test)
+        # Split data into train/validation/test
         X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.4, random_state=42, stratify=y)
         X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42, stratify=y_temp)
         
@@ -95,7 +104,12 @@ def train_model(data_path: str) -> Tuple[Any, dict]:
         
         # Train main model
         logging.info("Starting main model training")
-        model = RandomForestClassifier(random_state=42)
+        model = RandomForestClassifier(
+            n_estimators=200,
+            max_depth=10,          # Limit depth
+            min_samples_leaf=5,    # Prevent tiny leaves
+            random_state=42
+        )
         model.fit(X_train, y_train)
         logging.info("Main model training completed")
         
@@ -111,10 +125,11 @@ def train_model(data_path: str) -> Tuple[Any, dict]:
         print(f"Confusion Matrix:\n{confusion_matrix(y_test, y_pred)}")
         
         # Save model and encoders
-        joblib.dump((model, encoders), 'fall_risk_model.pkl')
-        logging.info("Model and encoders saved to fall_risk_model.pkl")
         
-        return model, encoders
+        joblib.dump((model, encoders, imputers), 'fall_risk_model.pkl')
+        logging.info("Model, encoders, and imputers saved to fall_risk_model.pkl")
+
+        return model, encoders, imputers
     
     except FileNotFoundError as e:
         logging.error("Critical error: Data file not found - %s", str(e))
@@ -123,44 +138,51 @@ def train_model(data_path: str) -> Tuple[Any, dict]:
         logging.error("Unexpected error during training - %s", str(e))
         raise
 
-def predict_risk(model: Any, encoders: dict, new_data: pd.DataFrame) -> np.ndarray:
+def predict_risk(model: Any, encoders: dict, imputers: dict, new_data: pd.DataFrame) -> np.ndarray:
     """
     Predicts risk scores for new data.
     
     Parameters:
     model (Any): Trained model.
     encoders (dict): Dictionary of label encoders.
+    imputers: dict containing fitted 'age' and 'gender' SimpleImputer objects
     new_data (pd.DataFrame): New data to predict on.
     
     Returns:
     np.ndarray: Risk scores (probabilities of fall).
+
     """
     try:
         df = new_data.copy()
-        # Ensure Hour exists
+        
+        # === REAPPLY IMPUTATION ===
+        if 'age' in imputers:
+            df['age'] = imputers['age'].transform(df[['age']])
+        if 'gender' in imputers:
+            df['gender'] = imputers['gender'].transform(df[['gender']]).ravel()
+        
+        # Add Hour
         df['Hour'] = pd.to_datetime(df['fall_time'], format='%H:%M', errors='coerce').dt.hour.fillna(12)
         
-        # Encode categorical features using saved encoders
-        for col in ['location', 'cause']:
+        # Encode categoricals
+        for col in ['location', 'cause', 'gender']:
             if col in encoders:
                 le = encoders[col]
-                df[col] = df[col].astype(str).map(lambda x: le.transform([x])[0] if x in le.classes_ else -1)
+                df[col] = df[col].astype(str).map(
+                    lambda x: le.transform([x])[0] if x in le.classes_ else le.transform(['Unknown'])[0]
+                )
         
-        features = ['location', 'cause', 'Hour']
-        X_new = df[features]
-        
-        # Predict probabilities
+        features = ['age', 'location', 'cause', 'gender', 'Hour']
+        X_new = df[features]       
         risk_scores = model.predict_proba(X_new)[:, 1]
         return risk_scores
     except Exception as e:
         logging.error("Error during prediction - %s", str(e))
         raise
 
-
 if __name__ == "__main__":
-    # Example usage
-    model, encoders = train_model('synthetic_fall_data.csv')
+    model, encoders, imputers = train_model('synthetic_fall_data.csv')
     # Load some data for prediction
     df = pd.read_csv('synthetic_fall_data.csv')
-    scores = predict_risk(model, encoders, df.head(10))
+    scores = predict_risk(model, encoders, imputers, df.head(10))
     print(f"Sample risk scores: {scores}")

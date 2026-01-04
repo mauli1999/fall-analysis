@@ -8,7 +8,7 @@ from huggingface_hub import InferenceClient
 from io import BytesIO
 from PIL import Image
 import joblib
-from predict_risk import train_model, predict_risk  # Updated import to match predict_risk.py
+from predict_risk import train_model, predict_risk
 from datetime import timedelta
 import streamlit as st
 import logging
@@ -20,19 +20,18 @@ load_dotenv()
 hf_api_key = os.getenv("HUGGINGFACE_API_TOKEN")
 client = InferenceClient(api_key=hf_api_key) if hf_api_key else None
 
-def load_data(use_ehr: bool = False, file_path: str = 'synthetic_fall_data.csv', **kwargs) -> pd.DataFrame:
+def load_data(file_path: str = 'synthetic_fall_data.csv', **kwargs) -> pd.DataFrame:
     """Synchronously load data from CSV file."""
     
     df = pd.read_csv(file_path)
     df['fall_date'] = pd.to_datetime(df['fall_date'])
-    df.fillna('Unknown', inplace=True)
     return df
 
-def analyze_falls(data_path: str):
+def analyze_falls(df: pd.DataFrame = None):
     """
-    Analyzes the synthetic fall dataset to compute statistics, generate visualizations, and produce a narrative summary.
+    Analyzes fall data. Accepts either a DataFrame or a file path to compute statistics, generate visualizations, and produce a narrative summary.
     
-    This function loads data from the specified CSV file, performs statistical analysis on fall occurrences,
+    This function loads data from the specified CSV file or gets the filtered data, performs statistical analysis on fall occurrences,
     trains a risk prediction model, computes risk scores, and generates a bar chart visualization.
     It uses only synthetic data and does not involve real EHR data.
     
@@ -42,29 +41,42 @@ def analyze_falls(data_path: str):
     Returns:
     tuple: (stats dict, narrative str, img_buffer BytesIO) - Statistics dictionary, narrative summary, and image buffer for visualization.
     """
+    """
+    Analyzes fall data. Accepts either a DataFrame or a file path.
+    """
     try:
-        logging.info("Starting data loading from %s", data_path)
-        df = pd.read_csv(data_path)
-        logging.info("Data loading completed: %d rows, %d columns", df.shape[0], df.shape[1])
+        data_path = 'synthetic_fall_data.csv'
         
-        # Perform analysis (e.g., compute statistics)
-        logging.info("Starting statistical analysis")
+        if df is None:
+            logging.info("Starting data loading from %s", data_path)
+            df = pd.read_csv(data_path)
+            logging.info("Data loading completed: %d rows, %d columns", df.shape[0], df.shape[1])
+        else:
+            logging.info("Using provided DataFrame with %d rows", len(df))
         if df.empty:
             return {'total_falls': 0, 'falls_by_location': {}, 'falls_by_cause': {}, 'falls_by_hour': {}, 'risk_by_location': {}, 'avg_risk': 0}, "No data available for analysis.", BytesIO()
 
         stats = {
-            'total_falls': len(df),
+            'total_falls': int(df['fall_occurred'].sum()),  # Fixed: actual falls, not total rows
             'falls_by_location': df['location'].value_counts().to_dict(),
             'falls_by_cause': df['cause'].value_counts().to_dict(),
             'falls_by_hour': pd.to_datetime(df['fall_time'], format='%H:%M', errors='coerce').dt.hour.value_counts().sort_index().to_dict()
         }
         
-        # Train model using the data_path (since train_model expects path)
-        model, encoders = train_model(data_path)
+        # Train model and compute risk scores
+        model_file = 'fall_risk_model.pkl'
+        if os.path.exists(model_file):
+            logging.info("Loading existing model from %s", model_file)
+            model, encoders, imputers = joblib.load(model_file)
+        else:
+            logging.info("No saved model found; training new model")
+            model, encoders, imputers = train_model(data_path) 
         
-        # Compute risk scores
-        risk_scores = predict_risk(model, encoders, df)
+        # Compute risk scores on the provided DataFrame
+        risk_scores = predict_risk(model, encoders, imputers, df)
+        df = df.copy()
         df['risk_score'] = risk_scores
+        
         stats['risk_by_location'] = df.groupby('location')['risk_score'].mean().fillna(0).to_dict()
         stats['avg_risk'] = df['risk_score'].mean()
 
@@ -73,6 +85,7 @@ def analyze_falls(data_path: str):
             try:
                 prompt = f"Summarize the following fall data trends concisely: {str(stats)}"
                 narrative = client.summarization(prompt, model="facebook/bart-large-cnn")
+                # narrative = client.text_generation(prompt, model="facebook/bart-large-cnn", max_new_tokens=150)
                 narrative = narrative if isinstance(narrative, str) else str(narrative)
             except Exception as e:
                 narrative = f"Error generating narrative: {str(e)}"
@@ -102,7 +115,6 @@ def analyze_falls(data_path: str):
         fig.savefig(img_buffer, format='png')
         img_buffer.seek(0)
         plt.close(fig)
-        img = Image.open(img_buffer)
         img_buffer.seek(0)
         logging.info("Visualization generation completed")
         

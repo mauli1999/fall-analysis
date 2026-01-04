@@ -15,6 +15,7 @@ from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileT
 import base64
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+from reportlab.lib.utils import ImageReader
 import asyncio
 
 # Configure logging
@@ -30,7 +31,6 @@ def load_data():
         logging.info("Loading data in dashboard")
         df = pd.read_csv('synthetic_fall_data.csv')
         df['fall_date'] = pd.to_datetime(df['fall_date'])
-        df.fillna('Unknown', inplace=True)
         logging.info("Data loaded successfully")
         return df
     except Exception as e:
@@ -52,9 +52,14 @@ def generate_pdf_report(stats, narrative, img_buffer):
     for line in lines:
         c.drawString(100, y, line)
         y -= 20
-    # Add image if available
+
+    # In generate_pdf_report():
     if img_buffer:
-        c.drawImage(img_buffer, 100, 400, width=400, height=300)
+        img_buffer.seek(0)
+        c.drawImage(ImageReader(img_buffer), 100, 400, width=400, height=300)
+
+    # if img_buffer:
+    #     c.drawImage(img_buffer, 100, 400, width=400, height=300)
     c.save()
     buffer.seek(0)
     return buffer
@@ -64,7 +69,7 @@ async def scheduled_report(email, stats, narrative, img_buffer):
     try:
         sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
         message = Mail(
-            from_email='noreply@yourapp.com',
+            from_email='******@gmail.com',
             to_emails=email,
             subject='Scheduled Fall Detection Report',
             html_content=f'<p>{narrative}</p>'
@@ -114,7 +119,7 @@ def main():
     # Load model
     try:
         logging.info("Loading model")
-        model, encoders = joblib.load('fall_risk_model.pkl')
+        model, encoders, imputers = joblib.load('fall_risk_model.pkl')
         logging.info("Model loaded successfully")
     except Exception as e:
         logging.error("Error loading model: %s", str(e))
@@ -123,7 +128,7 @@ def main():
     
     # Compute risk scores
     try:
-        risk_scores = predict_risk(model, encoders, filtered_df)
+        risk_scores = predict_risk(model, encoders, imputers, filtered_df)
         filtered_df['risk_score'] = risk_scores
     except Exception as e:
         logging.error("Error computing risk scores: %s", str(e))
@@ -133,7 +138,7 @@ def main():
     # Analyze falls
     try:
         logging.info("Running analysis")
-        stats, narrative, img_buffer = analyze_falls('synthetic_fall_data.csv')  # Assuming data_path, but for filtered, perhaps adjust
+        stats, narrative, img_buffer = analyze_falls(df=filtered_df)
         logging.info("Analysis completed")
     except Exception as e:
         logging.error("Error in analysis: %s", str(e))
@@ -186,9 +191,9 @@ def main():
     else:
         st.write("No data to display.")
     
-    # # Narrative
-    # st.header("Analysis Narrative")
-    # st.write(narrative)
+    # Narrative
+    st.header("Analysis Narrative")
+    st.write(narrative)
     
     # Download CSV
     st.header("Download Filtered Data")

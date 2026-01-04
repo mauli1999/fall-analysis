@@ -28,3 +28,34 @@ This project is strictly for educational prototyping of machine learning concept
 
 ## Installation and Usage
 
+### Prerequisites
+
+- Python 3.8 or higher
+- Git
+
+### Installation
+
+1. Clone the repository:
+   https://github.com/yourusername/fall_detection_ai_agent.git
+
+2. Create a virtual environment:
+   python -m venv venv
+   source venv/bin/activate # On Windows: venv\Scripts\activate
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+### Usage
+
+1. Generate synthetic data (optional, as the dashboard can load existing data):
+   python data_generation.py
+
+2. Train the model:
+   python predict_risk.py
+   python analysis.py
+
+3. Run the dashboard:
+   streamlit run dashboard.py
+
+4. Run tests:
+   pytest tests.py

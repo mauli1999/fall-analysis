@@ -4,7 +4,7 @@ This is a research prototype for prototyping machine learning pipelines on synth
 
 ## What This Project Does (Current State Only)
 
-The project generates synthetic data with features like age, gender, location, cause, and time of day, along with a binary target. It trains a logistic regression model to predict the binary target, provides a Streamlit dashboard for basic data visualization, and evaluates model performance on a held-out test set.
+The project generates synthetic data with features like age, gender, location, cause, and time of day, along with a binary target. It trains a Random Forest Classifier model to predict the binary target, provides a Streamlit dashboard for basic data visualization, and evaluates model performance on a held-out test set.
 
 ## Data Source (Synthetic) and Why
 
@@ -12,7 +12,7 @@ All data is fully synthetic, created programmatically without any basis in real-
 
 ## Modeling Approach and Evaluation Metrics
 
-The approach uses logistic regression for binary classification, with a train/validation/test split (80/10/10). A simple baseline model (dummy classifier) is trained for comparison. Evaluation metrics include accuracy, precision, recall, ROC-AUC, and confusion matrix, computed on the test set.
+The approach uses Random Forest Classifier for binary classification, with a train/validation/test split (60/20/20). A simple baseline model (dummy classifier) is trained for comparison. Evaluation metrics include accuracy, precision, recall, ROC-AUC, and confusion matrix, computed on the test set.
 
 ## Key Limitations and Non-Goals
 
